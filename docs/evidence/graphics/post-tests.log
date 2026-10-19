@@ -1,0 +1,15 @@
+active
+active
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda4       7.2G  4.1G  1.8G  70% /
+/opt/darkos-graphics/packages/run.9r01Pp/libegl1_1.7.0-1+b2_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libegl-dev_1.7.0-1+b2_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libegl-mesa0_25.0.7-2+deb13u1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libgbm1_25.0.7-2+deb13u1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libgbm-dev_25.0.7-2+deb13u1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libgl1-mesa-dri_25.0.7-2+deb13u1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libgles2_1.7.0-1+b2_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libgles-dev_1.7.0-1+b2_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libsdl2-2.0-0_2.32.4+dfsg-1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/libsdl2-dev_2.32.4+dfsg-1_arm64.deb: OK
+/opt/darkos-graphics/packages/run.9r01Pp/mesa-libgallium_25.0.7-2+deb13u1_arm64.deb: OK

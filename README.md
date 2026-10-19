@@ -4,6 +4,9 @@ Milestone 1 builds Linux 5.10.226 for QEMU `virt` and boots the existing dArkOS
 userspace on an x86-64 Ubuntu WSL2 host. EmulationStation and accelerated graphics
 are later milestones. See [validation.md](docs/validation.md) for measured results.
 
+Milestone 2 now validates kmscube and a native SDL2 KMSDRM/GLES demo using a
+private Mesa stack. See [graphics.md](docs/graphics.md) for setup and measured results.
+
 ## Host and source
 
 Run these commands **inside Ubuntu**, from this project directory. On Windows the

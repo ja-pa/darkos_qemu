@@ -1,0 +1,56 @@
+kmscube:
+  Installed: (none)
+  Candidate: 0.0.0~git20210103-1+b3
+  Version table:
+     0.0.0~git20210103-1+b3 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+libdrm-tests:
+  Installed: (none)
+  Candidate: 2.4.124-2
+  Version table:
+     2.4.124-2 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+gcc:
+  Installed: 4:14.2.0-1
+  Candidate: 4:14.2.0-1
+  Version table:
+ *** 4:14.2.0-1 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+        100 /var/lib/dpkg/status
+make:
+  Installed: 4.4.1-2
+  Candidate: 4.4.1-2
+  Version table:
+ *** 4.4.1-2 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+        100 /var/lib/dpkg/status
+pkg-config:
+  Installed: (none)
+  Candidate: 1.8.1-4
+  Version table:
+     1.8.1-4 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+        100 /var/lib/dpkg/status
+libsdl2-2.0-0:
+  Installed: 2.32.4+dfsg-1
+  Candidate: 2.32.4+dfsg-1
+  Version table:
+ *** 2.32.4+dfsg-1 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+        100 /var/lib/dpkg/status
+libgbm1:
+  Installed: 25.0.7-2
+  Candidate: 25.0.7-2+deb13u1
+  Version table:
+     25.0.7-2+deb13u1 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+ *** 25.0.7-2 100
+        100 /var/lib/dpkg/status
+libegl-mesa0:
+  Installed: 25.0.7-2
+  Candidate: 25.0.7-2+deb13u1
+  Version table:
+     25.0.7-2+deb13u1 500
+        500 http://deb.debian.org/debian trixie/main arm64 Packages
+ *** 25.0.7-2 100
+        100 /var/lib/dpkg/status

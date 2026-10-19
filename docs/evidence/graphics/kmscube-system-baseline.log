@@ -1,0 +1,5 @@
+Failed creating base context during opening of kernel driver.
+Kernel module may not have been loaded
+arm_release_ver: g13p0-01eac0, rk_so_ver: 11
+failed to initialize
+failed to initialize EGL

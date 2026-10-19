@@ -1,0 +1,14 @@
+[  800.286390] systemd-shutdown[1]: Deactivating swaps.
+[  800.287546] systemd-shutdown[1]: All swaps deactivated.
+[  800.287884] systemd-shutdown[1]: Detaching loop devices.
+[  800.343326] systemd-shutdown[1]: All loop devices detached.
+[  800.343668] systemd-shutdown[1]: Stopping MD devices.
+[  800.346495] systemd-shutdown[1]: All MD devices stopped.
+[  800.346728] systemd-shutdown[1]: Detaching DM devices.
+[  800.349233] systemd-shutdown[1]: All DM devices detached.
+[  800.349508] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[  800.352632] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  800.359814] systemd-shutdown[1]: Powering off.
+[  800.362867] Flash device refused suspend due to active operation (state 20)
+[  800.363180] Flash device refused suspend due to active operation (state 20)
+[  800.363672] reboot: Power down

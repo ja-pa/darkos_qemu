@@ -1,0 +1,6 @@
+SDL runtime: 2.32.4
+SDL video backend: KMSDRM
+GL_VENDOR: Mesa
+GL_RENDERER: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+GL_VERSION: OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1
+Presented frames: 9371; elapsed: 30.001 seconds
