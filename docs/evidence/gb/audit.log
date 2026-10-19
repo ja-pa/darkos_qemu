@@ -1,0 +1,27 @@
+    PID ELAPSED COMMAND
+    720      21 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+    720     100 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   1383      18 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   1383      76 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   2226       4 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   2610       4 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   2952       4 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   3687      38 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2
+    PID ELAPSED COMMAND
+   3687      94 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2

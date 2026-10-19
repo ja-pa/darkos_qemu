@@ -1,0 +1,12 @@
+{
+  "source": "https://tangramgames.itch.io/tobutobugirl",
+  "upload_id": "678889",
+  "archive_member": "tobutobugirl/tobu.gb",
+  "archive_sha256": "c5ec138071079b9cad227d6fb875ad4e58a77f173ed3cd8758c04c0ab166d6e7",
+  "rom_sha256": "5d3871cae77db2287807e8914fd21f76203e73aa3fec20955489d45cb4571d8f",
+  "rom_bytes": 262144,
+  "source_code_license": "MIT",
+  "assets_license": "CC BY 4.0",
+  "author": "Tangram Games; music by potato-tan",
+  "license_source": "https://github.com/SimonLarsen/tobutobugirl/blob/master/README.md"
+}

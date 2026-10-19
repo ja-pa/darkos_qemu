@@ -5,5 +5,8 @@
 *.qcow2
 *.img
 *.img.7z.*
+*.gb
+*.gbc
+*.sav
 __pycache__/
 /demos/sdl-kms/hello

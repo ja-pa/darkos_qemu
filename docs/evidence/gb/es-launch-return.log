@@ -1,0 +1,215 @@
+2026-10-19 16:24:37	INFO	EmulationStation - v2.13.0.0 CHMOD, built Oct 19 2026 - 20:24:14
+2026-10-19 16:24:37	INFO	Parsing XML file "/opt/darkos-es/resources/mamenames.xml"...
+2026-10-19 16:24:37	INFO	Parsing XML file "/opt/darkos-es/resources/mamebioses.xml"...
+2026-10-19 16:24:37	INFO	Parsing XML file "/opt/darkos-es/resources/mamedevices.xml"...
+2026-10-19 16:24:37	INFO	Window::init
+2026-10-19 16:24:37	INFO	Creating window...
+2026-10-19 16:24:37	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:24:37	INFO	SDL video backend: KMSDRM
+2026-10-19 16:24:37	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:24:37	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:24:37	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:24:39	INFO	Created window successfully.
+2026-10-19 16:24:39	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:24:39	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:24:39	INFO	OpenGL vendor: Mesa
+2026-10-19 16:24:39	INFO	Checking available OpenGL extensions...
+2026-10-19 16:24:39	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:24:39	INFO	Loading system config file /opt/darkos-es/home/.emulationstation/es_systems.cfg...
+2026-10-19 16:24:40	DEBUG	SystemView::getViewElements()
+2026-10-19 16:24:40	DEBUG	SystemView::getViewElements()
+2026-10-19 16:24:40	INFO	SDL AUDIO Initialized
+2026-10-19 16:24:52	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:24:52	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=0
+2026-10-19 16:24:57	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:24:57	INFO	 req sound [basic.launch]
+2026-10-19 16:24:57	INFO	   (missing)
+2026-10-19 16:24:58	INFO	Attempting to launch game...
+2026-10-19 16:24:58	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:24:58	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:24:58	DEBUG	fireEvent: game-start /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb Tobu Tobu Girl
+2026-10-19 16:24:58	INFO		/bin/bash /opt/darkos-emulators/peanut-gb/scripts/gb-run.sh /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb
+Started 2026-10-19T20:24:58Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Emulator PID=1383
+INFO: No dmg_boot.bin file found; disabling boot ROM
+INFO: Audio driver: System audio output device
+INFO: Unable to assign joystick mappings: Invalid RWops
+INFO: Peanut-SDL: TOBU
+INFO: SDL backend=KMSDRM renderer=opengl
+INFO: GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+INFO: No palette found for 0x3A.
+INFO: Presented frames=9579 elapsed_ms=170609
+Emulator exit status: 0
+2026-10-19 16:27:51	DEBUG	fireEvent: game-end  
+2026-10-19 16:27:51	INFO	Window::init
+2026-10-19 16:27:51	INFO	Creating window...
+2026-10-19 16:27:51	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:27:52	INFO	SDL video backend: KMSDRM
+2026-10-19 16:27:52	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:27:52	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:27:52	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:27:52	INFO	Created window successfully.
+2026-10-19 16:27:52	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:27:52	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:27:52	INFO	OpenGL vendor: Mesa
+2026-10-19 16:27:52	INFO	Checking available OpenGL extensions...
+2026-10-19 16:27:52	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:27:52	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:27:52	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:27:52	INFO	SDL AUDIO Initialized
+2026-10-19 16:27:52	DEBUG	Gamelist::saveToGamelistRecovery() - normal execution!
+2026-10-19 16:27:52	DEBUG	Gamelist::saveToGamelistRecoveryInternal() - Execute name: Tobu Tobu Girl, path: /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+2026-10-19 16:28:45	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:28:45	INFO	 req sound [basic.launch]
+2026-10-19 16:28:45	INFO	   (missing)
+2026-10-19 16:28:46	INFO	Attempting to launch game...
+2026-10-19 16:28:46	DEBUG	fireEvent: game-start /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb Tobu Tobu Girl
+2026-10-19 16:28:46	INFO		/bin/bash /opt/darkos-emulators/peanut-gb/scripts/gb-run.sh /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb
+Started 2026-10-19T20:28:46Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Emulator PID=2226
+INFO: No dmg_boot.bin file found; disabling boot ROM
+INFO: Audio driver: System audio output device
+INFO: Unable to assign joystick mappings: Invalid RWops
+INFO: Peanut-SDL: TOBU
+INFO: SDL backend=KMSDRM renderer=opengl
+INFO: GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+INFO: No palette found for 0x3A.
+INFO: Input key=Return
+INFO: Input key=Return
+INFO: Input key=Right
+INFO: Input key=Escape
+INFO: Presented frames=3688 elapsed_ms=66344
+Emulator exit status: 0
+2026-10-19 16:29:57	DEBUG	fireEvent: game-end  
+2026-10-19 16:29:57	INFO	Window::init
+2026-10-19 16:29:57	INFO	Creating window...
+2026-10-19 16:29:57	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:29:57	INFO	SDL video backend: KMSDRM
+2026-10-19 16:29:57	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:29:57	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:29:57	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:29:57	INFO	Created window successfully.
+2026-10-19 16:29:57	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:29:57	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:29:57	INFO	OpenGL vendor: Mesa
+2026-10-19 16:29:57	INFO	Checking available OpenGL extensions...
+2026-10-19 16:29:57	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:29:58	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:29:58	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:29:58	INFO	SDL AUDIO Initialized
+2026-10-19 16:29:58	DEBUG	Gamelist::saveToGamelistRecovery() - normal execution!
+2026-10-19 16:29:58	DEBUG	Gamelist::saveToGamelistRecoveryInternal() - Execute name: Tobu Tobu Girl, path: /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+2026-10-19 16:30:22	DEBUG	UIModeController::logInput( Keyboard ):Key Escape, isMappedTo= b, , value=0
+2026-10-19 16:30:34	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:30:34	INFO	 req sound [basic.launch]
+2026-10-19 16:30:34	INFO	   (missing)
+2026-10-19 16:30:34	INFO	Attempting to launch game...
+2026-10-19 16:30:35	DEBUG	fireEvent: game-start /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb Tobu Tobu Girl
+2026-10-19 16:30:35	INFO		/bin/bash /opt/darkos-emulators/peanut-gb/scripts/gb-run.sh /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb
+Started 2026-10-19T20:30:35Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Emulator PID=2610
+INFO: No dmg_boot.bin file found; disabling boot ROM
+INFO: Audio driver: System audio output device
+INFO: Unable to assign joystick mappings: Invalid RWops
+INFO: Peanut-SDL: TOBU
+INFO: SDL backend=KMSDRM renderer=opengl
+INFO: GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+INFO: No palette found for 0x3A.
+INFO: Input key=Return
+INFO: Input key=Return
+INFO: Input key=Y
+INFO: Input key=Escape
+INFO: Presented frames=4071 elapsed_ms=74242
+Emulator exit status: 0
+2026-10-19 16:31:53	DEBUG	fireEvent: game-end  
+2026-10-19 16:31:53	INFO	Window::init
+2026-10-19 16:31:53	INFO	Creating window...
+2026-10-19 16:31:53	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:31:53	INFO	SDL video backend: KMSDRM
+2026-10-19 16:31:53	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:31:53	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:31:53	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:31:53	INFO	Created window successfully.
+2026-10-19 16:31:53	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:31:53	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:31:53	INFO	OpenGL vendor: Mesa
+2026-10-19 16:31:53	INFO	Checking available OpenGL extensions...
+2026-10-19 16:31:53	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:31:54	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:31:54	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:31:54	INFO	SDL AUDIO Initialized
+2026-10-19 16:31:54	DEBUG	Gamelist::saveToGamelistRecovery() - normal execution!
+2026-10-19 16:31:54	DEBUG	Gamelist::saveToGamelistRecoveryInternal() - Execute name: Tobu Tobu Girl, path: /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+2026-10-19 16:31:59	DEBUG	UIModeController::logInput( Keyboard ):Key Escape, isMappedTo= b, , value=1
+2026-10-19 16:31:59	DEBUG	UIModeController::logInput( Keyboard ):Key Escape, isMappedTo= b, , value=0
+2026-10-19 16:32:03	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:32:03	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=0
+2026-10-19 16:32:08	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:32:08	INFO	 req sound [basic.launch]
+2026-10-19 16:32:08	INFO	   (missing)
+2026-10-19 16:32:08	INFO	Attempting to launch game...
+2026-10-19 16:32:09	DEBUG	fireEvent: game-start /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb Tobu Tobu Girl
+2026-10-19 16:32:09	INFO		/bin/bash /opt/darkos-emulators/peanut-gb/scripts/gb-run.sh /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb
+Started 2026-10-19T20:32:09Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Emulator PID=2952
+INFO: No dmg_boot.bin file found; disabling boot ROM
+INFO: Audio driver: System audio output device
+INFO: Unable to assign joystick mappings: Invalid RWops
+INFO: Peanut-SDL: TOBU
+INFO: SDL backend=KMSDRM renderer=opengl
+INFO: GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+INFO: No palette found for 0x3A.
+INFO: Input key=Return
+INFO: Input key=Return
+INFO: Input key=Left
+INFO: Input key=Escape
+INFO: Presented frames=3692 elapsed_ms=66369
+Emulator exit status: 0
+2026-10-19 16:33:19	DEBUG	fireEvent: game-end  
+2026-10-19 16:33:19	INFO	Window::init
+2026-10-19 16:33:19	INFO	Creating window...
+2026-10-19 16:33:19	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:33:19	INFO	SDL video backend: KMSDRM
+2026-10-19 16:33:19	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:33:19	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:33:19	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:33:20	INFO	Created window successfully.
+2026-10-19 16:33:20	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:33:20	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:33:20	INFO	OpenGL vendor: Mesa
+2026-10-19 16:33:20	INFO	Checking available OpenGL extensions...
+2026-10-19 16:33:20	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:33:20	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:33:20	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:33:20	INFO	SDL AUDIO Initialized
+2026-10-19 16:33:20	DEBUG	Gamelist::saveToGamelistRecovery() - normal execution!
+2026-10-19 16:33:20	DEBUG	Gamelist::saveToGamelistRecoveryInternal() - Execute name: Tobu Tobu Girl, path: /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+2026-10-19 16:33:37	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 16:33:37	INFO	 req sound [basic.launch]
+2026-10-19 16:33:37	INFO	   (missing)
+2026-10-19 16:33:37	INFO	Attempting to launch game...
+2026-10-19 16:33:38	DEBUG	fireEvent: game-start /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb Tobu Tobu Girl
+2026-10-19 16:33:38	INFO		/bin/bash /opt/darkos-emulators/peanut-gb/scripts/gb-run.sh /opt/darkos-emulators/peanut-gb/roms/Tobu\ Tobu\ Girl.gb
+Started 2026-10-19T20:33:38Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Missing or empty ROM
+2026-10-19 16:33:38	WARNING	...launch terminated with nonzero exit code 512!
+2026-10-19 16:33:38	DEBUG	fireEvent: game-end  
+2026-10-19 16:33:38	INFO	Window::init
+2026-10-19 16:33:38	INFO	Creating window...
+2026-10-19 16:33:38	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 16:33:38	INFO	SDL video backend: KMSDRM
+2026-10-19 16:33:38	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 16:33:38	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 16:33:38	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 16:33:38	INFO	Created window successfully.
+2026-10-19 16:33:38	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 16:33:38	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 16:33:38	INFO	OpenGL vendor: Mesa
+2026-10-19 16:33:38	INFO	Checking available OpenGL extensions...
+2026-10-19 16:33:38	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 16:33:39	DEBUG	VolumeControl::init() - Opened ALSA mixer
+2026-10-19 16:33:39	ERROR	VolumeControl::init() - Failed to attach to default card!
+2026-10-19 16:33:39	INFO	SDL AUDIO Initialized
+2026-10-19 16:34:34	INFO	Added/Updated 1 entities in '/etc/emulationstation/gamelists/gb/gamelist.xml'
+2026-10-19 16:34:34	ERROR	Unable to rename "/opt/darkos-emulators/peanut-gb/roms/gamelist.xmlto /opt/darkos-emulators/peanut-gb/roms/gamelist.xml.old"!
+2026-10-19 16:34:34	INFO	EmulationStation cleanly shutting down.

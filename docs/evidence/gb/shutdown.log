@@ -1,0 +1,24 @@
+[ 1018.206705] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 1018.266507] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[ 1018.389923] systemd-journald[137]: Received SIGTERM from PID 1 (systemd-shutdow).
+[ 1018.438924] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[ 1018.517536] systemd-shutdown[1]: Unmounting file systems.
+[ 1018.531793] (sd-umount)[4464]: Unmounting '/run/credentials/systemd-journald.service'.
+[ 1018.545051] (sd-umount)[4465]: Unmounting '/tmp'.
+[ 1018.557131] (sd-remount)[4466]: Remounting '/' read-only with options 'compress=zstd:3,space_cache=v2,subvolid=5,subvol=/'.
+[ 1018.567975] BTRFS info (device vda4): using free space tree
+[ 1018.598404] systemd-shutdown[1]: All filesystems unmounted.
+[ 1018.598701] systemd-shutdown[1]: Deactivating swaps.
+[ 1018.599520] systemd-shutdown[1]: All swaps deactivated.
+[ 1018.599746] systemd-shutdown[1]: Detaching loop devices.
+[ 1018.656615] systemd-shutdown[1]: All loop devices detached.
+[ 1018.656896] systemd-shutdown[1]: Stopping MD devices.
+[ 1018.659816] systemd-shutdown[1]: All MD devices stopped.
+[ 1018.660399] systemd-shutdown[1]: Detaching DM devices.
+[ 1018.662974] systemd-shutdown[1]: All DM devices detached.
+[ 1018.663346] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[ 1018.668761] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 1018.678080] systemd-shutdown[1]: Powering off.
+[ 1018.683612] Flash device refused suspend due to active operation (state 20)
+[ 1018.683875] Flash device refused suspend due to active operation (state 20)
+[ 1018.684877] reboot: Power down

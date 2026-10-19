@@ -1,0 +1,11 @@
+Started 2026-10-19T20:24:58Z; ROM=/opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb
+Emulator PID=1383
+INFO: No dmg_boot.bin file found; disabling boot ROM
+INFO: Audio driver: System audio output device
+INFO: Unable to assign joystick mappings: Invalid RWops
+INFO: Peanut-SDL: TOBU
+INFO: SDL backend=KMSDRM renderer=opengl
+INFO: GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+INFO: No palette found for 0x3A.
+INFO: Presented frames=9579 elapsed_ms=170609
+Emulator exit status: 0

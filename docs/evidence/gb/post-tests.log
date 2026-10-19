@@ -1,0 +1,6 @@
+Linux rg353m 5.10.226-darkos-qemu #1 SMP PREEMPT Mon Oct 19 18:14:31 CEST 2026 aarch64 GNU/Linux
+TARGET SOURCE    FSTYPE OPTIONS
+/      /dev/vda4 btrfs  rw,noatime,compress=zstd:3,space_cache=v2,subvolid=5,subvol=/
+lo               UNKNOWN        127.0.0.1/8 
+enp0s2           UP             10.0.2.15/24 
+active

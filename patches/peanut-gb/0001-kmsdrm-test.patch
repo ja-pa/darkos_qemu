@@ -1,0 +1,164 @@
+diff --git a/examples/sdl2/CMakeLists.txt b/examples/sdl2/CMakeLists.txt
+index 31052f4..92cba2a 100644
+--- a/examples/sdl2/CMakeLists.txt
++++ b/examples/sdl2/CMakeLists.txt
+@@ -54,6 +54,13 @@ SET(ENABLE_SOUND ON CACHE BOOL "Enable sound output")
+ IF(${LIBRARY_DISCOVER_METHOD} STREQUAL "PKG_CONFIG")
+     INCLUDE(FindPkgConfig)
+     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
++    IF(DARKOS_SDL_PREFIX)
++        SET(SDL2_INCLUDE_DIRS "${DARKOS_SDL_PREFIX}/include/SDL2")
++        SET(SDL2_LIBRARIES "${DARKOS_SDL_PREFIX}/lib/aarch64-linux-gnu/libSDL2.so")
++        IF(NOT EXISTS "${SDL2_LIBRARIES}")
++            MESSAGE(FATAL_ERROR "Private ARM64 SDL2 library missing")
++        ENDIF()
++    ENDIF()
+ ELSEIF(${LIBRARY_DISCOVER_METHOD} STREQUAL "CPM")
+     INCLUDE(CPM.cmake)
+     CPMADDPACKAGE(GITHUB_REPOSITORY libsdl-org/SDL
+diff --git a/examples/sdl2/peanut_sdl.c b/examples/sdl2/peanut_sdl.c
+index 8a345ac..76142b4 100644
+--- a/examples/sdl2/peanut_sdl.c
++++ b/examples/sdl2/peanut_sdl.c
+@@ -10,6 +10,7 @@
+ #include <stdlib.h>
+ 
+ #include "SDL.h"
++#include "SDL_opengl.h"
+ 
+ #if defined(ENABLE_SOUND_BLARGG)
+ #	include "blargg_apu/audio.h"
+@@ -638,6 +639,9 @@ int main(int argc, char **argv)
+ 	char *rom_file_name = NULL;
+ 	char *save_file_name = NULL;
+ 	int ret = EXIT_SUCCESS;
++	Uint32 darkos_started = SDL_GetTicks();
++	unsigned long darkos_frames = 0;
++	uint8_t darkos_pressed = 0;
+ 
+ 	SDL_LogSetPriority(LOG_CATERGORY_PEANUTSDL, SDL_LOG_PRIORITY_INFO);
+ 
+@@ -661,7 +665,7 @@ int main(int argc, char **argv)
+ 			SDL_WINDOWPOS_CENTERED,
+ 			SDL_WINDOWPOS_CENTERED,
+ 			LCD_WIDTH * 2, LCD_HEIGHT * 2,
+-			SDL_WINDOW_RESIZABLE | SDL_WINDOW_INPUT_FOCUS);
++			SDL_WINDOW_FULLSCREEN_DESKTOP | SDL_WINDOW_INPUT_FOCUS);
+ 
+ 	if(window == NULL)
+ 	{
+@@ -969,7 +973,7 @@ int main(int argc, char **argv)
+ 
+ 	SDL_SetWindowMinimumSize(window, LCD_WIDTH, LCD_HEIGHT);
+ 
+-	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
++	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+ 	if(renderer == NULL)
+ 	{
+ 		SDL_LogMessage(LOG_CATERGORY_PEANUTSDL,
+@@ -980,6 +984,24 @@ int main(int argc, char **argv)
+ 		goto out;
+ 	}
+ 
++	SDL_RendererInfo darkos_info;
++	const char *darkos_driver = SDL_GetCurrentVideoDriver();
++	if(SDL_GetRendererInfo(renderer, &darkos_info) != 0 ||
++	   !darkos_driver || SDL_strcasecmp(darkos_driver, "kmsdrm") != 0 ||
++	   SDL_strcmp(darkos_info.name, "opengl") != 0)
++	{
++		SDL_Log("Required KMSDRM/opengl renderer unavailable: %s", SDL_GetError());
++		ret = EXIT_FAILURE;
++		goto out;
++	}
++	SDL_Log("SDL backend=%s renderer=%s", darkos_driver, darkos_info.name);
++	typedef const GLubyte* (APIENTRY *darkos_gl_string_t)(GLenum);
++	darkos_gl_string_t darkos_gl_string = (darkos_gl_string_t)SDL_GL_GetProcAddress("glGetString");
++	if(!darkos_gl_string) { ret = EXIT_FAILURE; goto out; }
++	SDL_Log("GL vendor=%s renderer=%s version=%s", darkos_gl_string(GL_VENDOR),
++	        darkos_gl_string(GL_RENDERER), darkos_gl_string(GL_VERSION));
++	darkos_started = SDL_GetTicks();
++
+ 	if(SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255) < 0)
+ 	{
+ 		SDL_LogMessage(LOG_CATERGORY_PEANUTSDL,
+@@ -1001,6 +1023,7 @@ int main(int argc, char **argv)
+ 	}
+ 
+ 	SDL_RenderPresent(renderer);
++	++darkos_frames;
+ 
+ 	/* Use integer scale. */
+ 	SDL_RenderSetLogicalSize(renderer, LCD_WIDTH, LCD_HEIGHT);
+@@ -1037,7 +1060,8 @@ int main(int argc, char **argv)
+ 		/* Get joypad input. */
+ 		while(SDL_PollEvent(&event))
+ 		{
+-			static int fullscreen = 0;
++			static int fullscreen = SDL_WINDOW_FULLSCREEN_DESKTOP;
++			uint8_t darkos_before = gb.direct.joypad;
+ 
+ 			switch(event.type)
+ 			{
+@@ -1121,8 +1145,13 @@ int main(int argc, char **argv)
+ 				break;
+ 
+ 			case SDL_KEYDOWN:
++				SDL_Log("Input key=%s", SDL_GetKeyName(event.key.keysym.sym));
+ 				switch(event.key.keysym.sym)
+ 				{
++				case SDLK_ESCAPE:
++					ret = EXIT_SUCCESS;
++					goto quit;
++
+ 				case SDLK_RETURN:
+ 					gb.direct.joypad &= ~JOYPAD_START;
+ 					break;
+@@ -1230,6 +1259,10 @@ int main(int argc, char **argv)
+ 			case SDL_KEYUP:
+ 				switch(event.key.keysym.sym)
+ 				{
++				case SDLK_ESCAPE:
++					ret = EXIT_SUCCESS;
++					goto quit;
++
+ 				case SDLK_RETURN:
+ 					gb.direct.joypad |= JOYPAD_START;
+ 					break;
+@@ -1309,10 +1342,16 @@ int main(int argc, char **argv)
+ 
+ 				break;
+ 			}
++			/* Preserve a short press even if key-up was in the same poll batch. */
++			darkos_pressed |= darkos_before & (uint8_t)~gb.direct.joypad;
+ 		}
+ 
+-		/* Execute CPU cycles until the screen has to be redrawn. */
++		/* Expose each press to the emulated CPU for at least one full frame. */
++		uint8_t darkos_released = gb.direct.joypad;
++		gb.direct.joypad &= (uint8_t)~darkos_pressed;
+ 		gb_run_frame(&gb);
++		gb.direct.joypad = darkos_released;
++		darkos_pressed = 0;
+ 
+ 		/* Tick the internal RTC when 1 second has passed. */
+ 		rtc_timer += target_speed_ms / (double) fast_mode;
+@@ -1345,6 +1384,7 @@ int main(int argc, char **argv)
+ 		SDL_RenderClear(renderer);
+ 		SDL_RenderCopy(renderer, texture, NULL, NULL);
+ 		SDL_RenderPresent(renderer);
++		++darkos_frames;
+ 
+ 		if(dump_bmp)
+ 		{
+@@ -1431,9 +1471,10 @@ int main(int argc, char **argv)
+ 	}
+ 
+ quit:
++	SDL_Log("Presented frames=%lu elapsed_ms=%u", darkos_frames, SDL_GetTicks()-darkos_started);
++	SDL_DestroyTexture(texture);
+ 	SDL_DestroyRenderer(renderer);
+ 	SDL_DestroyWindow(window);
+-	SDL_DestroyTexture(texture);
+ 	SDL_GameControllerClose(controller);
+ 	SDL_Quit();
+ #ifdef ENABLE_SOUND_BLARGG
