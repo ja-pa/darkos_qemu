@@ -1,0 +1,26 @@
+VM ready: SSH 127.0.0.1:2233; log /home/japa1/darkos-qemu-m5-import/logs/workflow/serial.log
+dArkOS QEMU profile ready; existing user settings preserved
+Isolated graphics VM verified: PID 281253, disk /home/japa1/darkos-qemu-m5-import/images/work.qcow2
+2026-10-19 17:59:50	INFO	EmulationStation - v2.13.0.0 CHMOD, built Oct 19 2026 - 23:35:22
+2026-10-19 17:59:50	INFO	Parsing XML file "/opt/darkos-es/resources/mamenames.xml"...
+2026-10-19 17:59:50	INFO	Parsing XML file "/opt/darkos-es/resources/mamebioses.xml"...
+2026-10-19 17:59:50	INFO	Parsing XML file "/opt/darkos-es/resources/mamedevices.xml"...
+2026-10-19 17:59:50	INFO	Window::init
+2026-10-19 17:59:50	INFO	Creating window...
+2026-10-19 17:59:50	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 17:59:51	INFO	SDL video backend: KMSDRM
+2026-10-19 17:59:51	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 17:59:51	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 17:59:51	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 17:59:53	INFO	Created window successfully.
+2026-10-19 17:59:53	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:59:53	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:59:53	INFO	OpenGL vendor: Mesa
+2026-10-19 17:59:53	INFO	Checking available OpenGL extensions...
+2026-10-19 17:59:53	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 17:59:53	INFO	Loading system config file /opt/darkos-es/home/.emulationstation/es_systems.cfg...
+2026-10-19 17:59:54	DEBUG	SystemView::getViewElements()
+2026-10-19 17:59:54	INFO	SDL AUDIO Initialized
+2026-10-19 18:00:38	DEBUG	UIModeController::logInput( Keyboard ):Key Down, isMappedTo= down, , value=1
+2026-10-19 18:00:38	DEBUG	UIModeController::logInput( Keyboard ):Key Down, isMappedTo= down, , value=0
+2026-10-19 18:01:19	INFO	EmulationStation cleanly shutting down.

@@ -1,0 +1,12 @@
+aarch64-linux-gnu-gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+cmake version 4.2.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+1.13.2
+d0bcca771c83a2638c93a9ae61f3d51f226dc905
+3504e57d87c0d95aeeaa03b480845ab1de6a938f259bdebe3111150bd601907f  /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/patches/peanut-gb/0001-kmsdrm-test.patch
+b01f4c0aaccde3e26d4f331c9ff6d4bbad646fb1f4e39e23d110d1e44b6aa416  /home/japa1/darkos-qemu-m5/gb/build/peanut-sdl

@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-10-19T22:05:23.731285+00:00",
+  "source_work_dir": "/home/japa1/darkos-qemu-m5",
+  "imported_work_dir": "/home/japa1/darkos-qemu-m5-import",
+  "runtime_id": "222719a4c54d25db6d92fcce29b4f1758c5e6d596f1092c60cd8c4e077b3eb80",
+  "runtime_directory_physical_bytes": 5580087296,
+  "sdk_directory_physical_bytes": 1506959360,
+  "runtime_qcow2_virtual_bytes": 8053063680,
+  "runtime_qcow2_file_bytes": 5548081152,
+  "runtime_has_backing_file": false,
+  "accepted_game_cycles": [
+    {
+      "pid": 1952,
+      "frames": 5516,
+      "elapsed_ms": 94685,
+      "exit": 0
+    },
+    {
+      "pid": 2616,
+      "frames": 5069,
+      "elapsed_ms": 86940,
+      "exit": 0
+    },
+    {
+      "pid": 2960,
+      "frames": 6304,
+      "elapsed_ms": 108506,
+      "exit": 0
+    }
+  ],
+  "additional_navigation_launches_not_counted": 1,
+  "sdl_demo": {
+    "frames": 8609,
+    "elapsed_ms": 30001
+  },
+  "sdk_bundle_manifest_sha256": "41578a63d1063fdf16e49beea6f91b132ba0bfe5477d99667c6074df7434eed7"
+}

@@ -2,6 +2,10 @@
 /repos/
 /build/
 /logs/
+/sdk/
+/apps/
+/state/
+/exports/
 *.qcow2
 *.img
 *.img.7z.*

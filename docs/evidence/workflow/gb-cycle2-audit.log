@@ -1,0 +1,3 @@
+    PID ELAPSED COMMAND
+   2616      31 ./peanut-sdl /opt/darkos-emulators/peanut-gb/roms/Tobu Tobu Girl.gb /opt/darkos-emulators/peanut-gb/saves/Tobu Tobu Girl.sav
+Runtime library audit passed: private SDL2/Mesa, no libMali/libgo2

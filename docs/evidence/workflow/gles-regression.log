@@ -1,0 +1,19 @@
+Isolated graphics VM verified: PID 277438, disk /home/japa1/darkos-qemu-m5/images/work.qcow2
+Isolated graphics VM verified: PID 277438, disk /home/japa1/darkos-qemu-m5/images/work.qcow2
+cc -I/opt/darkos-graphics/usr/include/SDL2 -I/opt/darkos-graphics/usr/include -O2 -g -Wall -Wextra hello.c -o hello -L/opt/darkos-graphics/usr/lib/aarch64-linux-gnu $(pkg-config --cflags --libs sdl2 glesv2)
+x11
+wayland
+KMSDRM
+offscreen
+dummy
+evdev
+Isolated graphics VM verified: PID 277438, disk /home/japa1/darkos-qemu-m5/images/work.qcow2
+Isolated graphics VM verified: PID 277438, disk /home/japa1/darkos-qemu-m5/images/work.qcow2
+DRM device: /dev/dri/card0
+SDL runtime: 2.32.4
+SDL video backend: KMSDRM
+GL_VENDOR: Mesa
+GL_RENDERER: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+GL_VERSION: OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1
+Presented frames: 9554; elapsed: 30.001 seconds
+Application exit status: 0

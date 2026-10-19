@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/japa1/darkos-qemu-m5-import/apps/sdk-app",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc-12 --sysroot=/home/japa1/darkos-qemu-m5-import/sdk/sysroot -isystem /home/japa1/darkos-qemu-m5-import/sdk/sysroot/opt/darkos-graphics/usr/include -isystem /home/japa1/darkos-qemu-m5-import/sdk/sysroot/opt/darkos-graphics/usr/include/SDL2 -B/home/japa1/darkos-qemu-m5-import/sdk/sysroot/usr/lib/aarch64-linux-gnu/ -isystem /home/japa1/darkos-qemu-m5-import/sdk/sysroot/usr/include/aarch64-linux-gnu -isystem /home/japa1/darkos-qemu-m5-import/sdk/sysroot/usr/include -O3 -DNDEBUG -D_REENTRANT -o CMakeFiles/sdl-demo.dir/main.c.o -c /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/demos/sdk-app/main.c",
+  "file": "/mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/demos/sdk-app/main.c",
+  "output": "/home/japa1/darkos-qemu-m5-import/apps/sdk-app/CMakeFiles/sdl-demo.dir/main.c.o"
+}
+]

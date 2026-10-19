@@ -1,0 +1,19 @@
+SDK verified: 222719a4c54d25db6d92fcce29b4f1758c5e6d596f1092c60cd8c4e077b3eb80
+-- The C compiler identification is GNU 12.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc-12 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'sdl2'
+--   Found sdl2, version 2.32.4
+-- Configuring done (5.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/japa1/darkos-qemu-m5-import/apps/sdk-app
+[1/2] Building C object CMakeFiles/sdl-demo.dir/main.c.o
+[2/2] Linking C executable sdl-demo
+Compile/link wall time: 0.529 seconds
+real 7.83
+user 1.95
+sys 1.36

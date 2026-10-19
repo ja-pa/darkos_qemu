@@ -31,6 +31,10 @@ cmd=(qemu-system-aarch64 -M "${QEMU_MACHINE:-virt}" -accel tcg -cpu cortex-a53 -
   -device virtio-blk-pci,drive=hd0
   -netdev "user,id=net0,hostfwd=tcp:127.0.0.1:$SSH_PORT-:22"
   -device virtio-net-pci,netdev=net0 -append "$cmdline")
+if [[ -n ${QMP_SOCKET:-} ]]; then
+  [[ $QMP_SOCKET != *,* ]] || fail 'QMP_SOCKET cannot contain commas'
+  cmd+=(-qmp "unix:$QMP_SOCKET,server=on,wait=off")
+fi
 if [[ $mode == serial ]]; then
   cmd+=(-display none)
 else

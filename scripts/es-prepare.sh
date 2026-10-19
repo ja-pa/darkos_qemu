@@ -13,7 +13,8 @@ deps=(libfreetype-dev libfreeimage-dev libsdl2-mixer-dev libcurl4-openssl-dev li
 apt-get -s --no-install-recommends install "${deps[@]}" | tee "$log/apt-plan.log"
 ! grep -q '^Remv ' "$log/apt-plan.log" || { echo 'Unexpected removals' >&2; exit 1; }
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends "${deps[@]}"
-cd "$prefix/packages/es"
+download_dir=$(mktemp -d "$prefix/packages/es/run.XXXXXX")
+cd "$download_dir"
 for package in libopengl0 libopengl-dev libgl1 libgl-dev libglx0 libglx-dev libglvnd0; do
   version=$(apt-cache policy "$package:arm64" | awk '/Candidate:/ {print $2}')
   [[ -n $version && $version != '(none)' ]]

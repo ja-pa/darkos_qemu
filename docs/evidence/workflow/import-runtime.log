@@ -1,0 +1,20 @@
+Linux rg353m 5.10.226-darkos-qemu #1 SMP PREEMPT Mon Oct 19 23:10:58 CEST 2026 aarch64 GNU/Linux
+TARGET SOURCE    FSTYPE OPTIONS
+/      /dev/vda4 btrfs  rw,noatime,compress=zstd:3,space_cache=v2,subvolid=5,subvol=/
+NAME      FSTYPE FSVER LABEL      UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+mtdblock0                                                                             
+vda                                                                                   
+├─vda1                                                                                
+├─vda2                                                                                
+├─vda3    vfat   FAT32 dArkOS_Fat 4B28-5BA3                              60.9M    38% /boot
+├─vda4    btrfs        ROOTFS     d6b9c6d2-fc63-49d1-9129-abe94ed20614    1.7G    58% /
+└─vda5    vfat   FAT16 ROMS       4B29-D4BB                                           
+lo               UNKNOWN        127.0.0.1/8 
+enp0s2           UP             10.0.2.15/24 
+default via 10.0.2.2 dev enp0s2 proto dhcp src 10.0.2.15 metric 100 
+10.0.2.0/24 dev enp0s2 proto kernel scope link src 10.0.2.15 metric 100 
+total 0
+drwxr-xr-x 2 root root         80 Oct 19 17:59 by-path
+crw-rw---- 1 root video  226,   0 Oct 19 17:59 card0
+crw-rw---- 1 root render 226, 128 Oct 19 17:59 renderD128
+222719a4c54d25db6d92fcce29b4f1758c5e6d596f1092c60cd8c4e077b3eb80

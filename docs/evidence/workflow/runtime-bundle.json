@@ -1,0 +1,11 @@
+{
+  "format": 1,
+  "kind": "runtime",
+  "files": {
+    "Image": "39272166ebbf69ef5af121d5a7695e22aeb1fa0a7b5fbc8bff16936ebd3376b7",
+    "LICENSES.txt": "3ecef2d8dec3ae2968ef1fc97c06207604324580c6a37d3dbcb0f2a55e818c05",
+    "provenance.json": "1741112b301b75512089c1461f1cccd817f804fd2c76571c21b4c73cbaa2cefa",
+    "runtime-id": "b2dce9976b891d7e5eb91ccf7f3595afb43ca08d2b691504148fefe8224dc0e2",
+    "runtime.qcow2": "a712d82b1fe296e01567087308c019642c577cc6efa3d38acb2109f42e10dd1e"
+  }
+}

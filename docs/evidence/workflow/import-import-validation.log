@@ -1,0 +1,8 @@
+Imported UI/theme, clean ROM/save/profile directories and runtime ID verified
+Fresh user SSH key SHA256: 81d39fc93ea54d8a432a3de8e32441abaf32167e3575b9725bfeab7ae3d9a7d8
+Only the new user key is authorized; SSH server host key differs from source
+2026-10-19 17:59:51	INFO	SDL video backend: KMSDRM
+2026-10-19 17:59:53	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:59:53	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:59:53	INFO	OpenGL vendor: Mesa
+PID=717; runtime libraries verified without libMali/libgo2

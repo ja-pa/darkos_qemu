@@ -1,0 +1,43 @@
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:3 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.12ubuntu2.26.04.2).
+gcc-12 is already the newest version (12.5.0-9ubuntu1).
+gcc-12-aarch64-linux-gnu is already the newest version (12.5.0-9ubuntu1cross1).
+binutils-aarch64-linux-gnu is already the newest version (2.46-3ubuntu2).
+bc is already the newest version (1.07.1-4build1).
+bison is already the newest version (2:3.8.2+dfsg-1ubuntu0.26.04.1).
+flex is already the newest version (2.6.4-8.2build2).
+libssl-dev is already the newest version (3.5.5-1ubuntu3.7).
+libelf-dev is already the newest version (0.194-4).
+7zip is already the newest version (26.00+dfsg-1).
+qemu-system-arm is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+qemu-system-gui is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+qemu-utils is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+btrfs-progs is already the newest version (6.17.1-1build1).
+fdisk is already the newest version (2.41.3-3ubuntu2.2).
+dosfstools is already the newest version (4.2-1.2build1).
+rsync is already the newest version (3.4.1+ds1-7ubuntu0.3).
+git is already the newest version (1:2.53.0-1ubuntu1.1).
+python3 is already the newest version (3.14.3-0ubuntu2).
+openssh-client is already the newest version (1:10.2p1-2ubuntu3.8).
+kmod is already the newest version (34.2-2ubuntu2).
+udev is already the newest version (259.9-0ubuntu0.1).
+util-linux is already the newest version (2.41.3-3ubuntu2.2).
+g++-12-aarch64-linux-gnu is already the newest version (12.5.0-9ubuntu1cross1).
+cmake is already the newest version (4.2.3-2ubuntu2).
+ninja-build is already the newest version (1.13.2-1).
+pkg-config is already the newest version (2.5.1-4).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 58 not upgraded.
+QEMU guest profile applied to overlay. Base image was not modified.
+/dev/nbd0 disconnected
+Setup complete. Next: bash sdk.sh prepare (source), or bash vm.sh es (runtime import).
+real 46.24
+user 6.53
+sys 17.93

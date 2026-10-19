@@ -6,6 +6,7 @@ profile = Path('/opt/darkos-es/home/.emulationstation')
 path = profile / 'es_systems.cfg'
 tree = ET.parse(path)
 systems = tree.getroot()
+had_gameboy = any(system.findtext('name') == 'gb' for system in systems)
 for system in list(systems):
     if system.findtext('name') == 'gb':
         systems.remove(system)
@@ -23,6 +24,8 @@ path = profile / 'es_settings.cfg'
 tree = ET.parse(path)
 for tag, name, value in [('bool', 'HideWindow', 'true'), ('string', 'StartupSystem', 'gb')]:
     item = tree.getroot().find(f"{tag}[@name='{name}']")
+    if name == 'StartupSystem' and item is not None and had_gameboy:
+        continue
     if item is None:
         item = ET.SubElement(tree.getroot(), tag, name=name)
     item.set('value', value)

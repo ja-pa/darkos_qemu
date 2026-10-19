@@ -1,0 +1,307 @@
+SDK verified: 222719a4c54d25db6d92fcce29b4f1758c5e6d596f1092c60cd8c4e077b3eb80
+Cloning into '/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod'...
+HEAD is now at db231621 Log SDL KMSDRM context setup failures
+Submodule 'external/pugixml' (https://github.com/zeux/pugixml.git) registered for path 'external/pugixml'
+Cloning into '/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/external/pugixml'...
+Submodule path 'external/pugixml': checked out '96aebcb8ae2062ad020186e32fd301db7c3a0c88'
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 12.5.0
+-- The CXX compiler identification is GNU 12.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc-12 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++-12 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FindOpenGL.cmake:534 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  CMakeLists.txt:54 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenGL: /home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libOpenGL.so
+-- Found Freetype: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.13.3")
+-- Looking for FreeImage...
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'freeimage'
+--   Package 'freeimage' not found
+-- Found FreeImage: optimized;/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/libfreeimage.so;debug;/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/libfreeimage.so
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found SDL2: /home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libSDL2main.a;/home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu/libSDL2.so
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (SDLMIXER)
+  does not match the name of the calling package (SDL2MIXER).  This can lead
+  to problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  CMake/Packages/FindSDL2MIXER.cmake:49 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:61 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found SDLMIXER: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include/SDL2
+-- Found CURL: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/libcurl.so (found version "8.14.1")
+-- Checking for module 'libvlc>=1.0.0'
+--   Found libvlc, version 3.0.23
+-- VLC library found
+-- Found VLC: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include/vlc
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (Rapidjson)
+  does not match the name of the calling package (RapidJSON).  This can lead
+  to problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  CMake/Packages/FindRapidJSON.cmake:64 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:64 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Rapidjson: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include
+-- Found ALSA: /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/libasound.so (found version "1.2.14")
+CMake Deprecation Warning at external/pugixml/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Configuring done (28.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/japa1/darkos-qemu-m5/es/build
+[1/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/CECInput.cpp.o
+[2/121] Building CXX object external/nanosvg/CMakeFiles/nanosvg.dir/src/nanosvg_impl.cpp.o
+[3/121] Linking CXX static library libnanosvg.a
+[4/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/AudioManager.cpp.o
+[5/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/GuiComponent.cpp.o
+[6/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/HelpStyle.cpp.o
+[7/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/HttpReq.cpp.o
+In file included from /home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.h:6,
+                 from /home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.cpp:2:
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.cpp: In constructor ‘HttpReq::HttpReq(const std::string&, std::string)’:
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.cpp:140:41: warning: ‘CURLOPT_REDIR_PROTOCOLS’ is deprecated: since 7.85.0. Use CURLOPT_REDIR_PROTOCOLS_STR [-Wdeprecated-declarations]
+  140 |         err = curl_easy_setopt(mHandle, CURLOPT_REDIR_PROTOCOLS, CURLPROTO_HTTP | CURLPROTO_HTTPS);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include/aarch64-linux-gnu/curl/curl.h:1795:3: note: declared here
+ 1795 |   CURLOPTDEPRECATED(CURLOPT_REDIR_PROTOCOLS, CURLOPTTYPE_LONG, 182,
+      |   ^~~~~~~~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.cpp: In static member function ‘static size_t HttpReq::write_content(void*, size_t, size_t, void*)’:
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-core/src/HttpReq.cpp:442:50: warning: ‘CURLINFO_CONTENT_LENGTH_DOWNLOAD’ is deprecated: since 7.55.0. Use CURLINFO_CONTENT_LENGTH_DOWNLOAD_T [-Wdeprecated-declarations]
+  442 |         if (!curl_easy_getinfo(request->mHandle, CURLINFO_CONTENT_LENGTH_DOWNLOAD, &cl))
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include/aarch64-linux-gnu/curl/curl.h:2935:3: note: declared here
+ 2935 |   CURLINFO_CONTENT_LENGTH_DOWNLOAD
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[8/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/ImageIO.cpp.o
+[9/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/InputConfig.cpp.o
+[10/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/Log.cpp.o
+[11/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/platform.cpp.o
+[12/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/MameNames.cpp.o
+[13/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/InputManager.cpp.o
+[14/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/Scripting.cpp.o
+[15/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/PowerSaver.cpp.o
+[16/121] Building CXX object external/pugixml/CMakeFiles/pugixml-static.dir/src/pugixml.cpp.o
+[17/121] Linking CXX static library libpugixml.a
+[18/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/Sound.cpp.o
+[19/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/Settings.cpp.o
+[20/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/animations/AnimationController.cpp.o
+[21/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/EsLocale.cpp.o
+[22/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/AnimatedImageComponent.cpp.o
+[23/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/Window.cpp.o
+[24/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/AsyncNotificationComponent.cpp.o
+[25/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/BusyComponent.cpp.o
+[26/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/ButtonComponent.cpp.o
+[27/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/ComponentGrid.cpp.o
+[28/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/DateTimeComponent.cpp.o
+[29/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/ThemeData.cpp.o
+[30/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/ComponentList.cpp.o
+[31/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/DateTimeEditComponent.cpp.o
+[32/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/HelpComponent.cpp.o
+[33/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/ImageComponent.cpp.o
+[34/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/ScrollableContainer.cpp.o
+[35/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/NinePatchComponent.cpp.o
+[36/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/MenuComponent.cpp.o
+[37/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/GridTileComponent.cpp.o
+[38/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/SliderComponent.cpp.o
+[39/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/SwitchComponent.cpp.o
+[40/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/VideoPlayerComponent.cpp.o
+[41/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/TextEditComponent.cpp.o
+[42/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/TextComponent.cpp.o
+[43/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/VideoVlcComponent.cpp.o
+[44/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/components/VideoComponent.cpp.o
+[45/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiDetectDevice.cpp.o
+[46/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiInfoPopup.cpp.o
+[47/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiMsgBox.cpp.o
+[48/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiInputConfig.cpp.o
+[49/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiTextEditPopup.cpp.o
+[50/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Misc.cpp.o
+[51/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Transform4x4f.cpp.o
+[52/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Vector2i.cpp.o
+[53/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Vector2f.cpp.o
+[54/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Vector3f.cpp.o
+[55/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/math/Vector4f.cpp.o
+[56/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/renderers/Renderer_GLES10.cpp.o
+[57/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/renderers/Renderer_GL21.cpp.o
+[58/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/renderers/Renderer.cpp.o
+[59/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/guis/GuiTextEditPopupKeyboard.cpp.o
+[60/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/resources/ResourceManager.cpp.o
+[61/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/resources/TextureResource.cpp.o
+[62/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/resources/TextureData.cpp.o
+[63/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/resources/Font.cpp.o
+[64/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/resources/TextureDataManager.cpp.o
+[65/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/NameResolver.cpp.o
+[66/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/TimeUtil.cpp.o
+[67/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/ThreadPool.cpp.o
+[68/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/AsyncUtil.cpp.o
+[69/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/StringUtil.cpp.o
+[70/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/utils/FileSystemUtil.cpp.o
+[71/121] Building CXX object es-core/CMakeFiles/es-core.dir/src/SystemConf.cpp.o
+[72/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/FileSorts.cpp.o
+[73/121] Linking CXX static library libes-core.a
+[74/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/main.cpp.o
+[75/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/PlatformId.cpp.o
+[76/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/ScraperCmdLine.cpp.o
+[77/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/MetaData.cpp.o
+[78/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/FileData.cpp.o
+[79/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/VolumeControl.cpp.o
+[80/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/FileFilterIndex.cpp.o
+[81/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/Gamelist.cpp.o
+[82/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/SystemScreenSaver.cpp.o
+[83/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/SystemData.cpp.o
+[84/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/ContentInstaller.cpp.o
+[85/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/ApiSystem.cpp.o
+[86/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/components/AsyncReqComponent.cpp.o
+[87/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/components/RatingComponent.cpp.o
+[88/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiFastSelect.cpp.o
+[89/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/CollectionSystemManager.cpp.o
+[90/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiGameScraper.cpp.o
+[91/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/components/ScraperSearchComponent.cpp.o
+[92/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiScreensaverOptions.cpp.o
+[93/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiMetaDataEd.cpp.o
+[94/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiGeneralScreensaverOptions.cpp.o
+[95/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiGamelistOptions.cpp.o
+[96/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiVideoScreensaverOptions.cpp.o
+[97/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiSettings.cpp.o
+[98/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiSlideshowScreensaverOptions.cpp.o
+[99/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiScraperMulti.cpp.o
+[100/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiThemeInstall.cpp.o
+[101/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiGamelistFilter.cpp.o
+[102/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiScraperStart.cpp.o
+[103/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiTools.cpp.o
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-app/src/guis/GuiTools.cpp: In member function ‘void GuiTools::launchTool(const std::string&)’:
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-app/src/guis/GuiTools.cpp:163:11: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  163 |     system("sudo chmod 666 /dev/tty1");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/repos/EmulationStation-fcamod/es-app/src/guis/GuiTools.cpp:168:11: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  168 |     system("setterm -clear all > /dev/tty1");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[104/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/GamesDBJSONScraper.cpp.o
+[105/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/Scraper.cpp.o
+[106/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/GamesDBJSONScraperResources.cpp.o
+[107/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiCollectionSystemsOptions.cpp.o
+[108/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/ScreenScraper.cpp.o
+[109/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/md5.cpp.o
+[110/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/scrapers/ThreadedScraper.cpp.o
+[111/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/IGameListView.cpp.o
+[112/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/BasicGameListView.cpp.o
+[113/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/DetailedGameListView.cpp.o
+[114/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/ISimpleGameListView.cpp.o
+[115/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/guis/GuiMenu.cpp.o
+[116/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/VideoGameListView.cpp.o
+[117/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/gamelist/GridGameListView.cpp.o
+[118/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/UIModeController.cpp.o
+[119/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/SystemView.cpp.o
+[120/121] Building CXX object es-app/CMakeFiles/emulationstation.dir/src/views/ViewController.cpp.o
+[121/121] Linking CXX executable emulationstation
+Cloning into '/home/japa1/darkos-qemu-m5/repos/Peanut-GB'...
+HEAD is now at d0bcca7 Merge pull request #156 from hidetatz/joypad_bug
+{
+  "source": "https://tangramgames.itch.io/tobutobugirl",
+  "upload_id": "678889",
+  "archive_member": "tobutobugirl/tobu.gb",
+  "archive_sha256": "c5ec138071079b9cad227d6fb875ad4e58a77f173ed3cd8758c04c0ab166d6e7",
+  "rom_sha256": "5d3871cae77db2287807e8914fd21f76203e73aa3fec20955489d45cb4571d8f",
+  "rom_bytes": 262144,
+  "source_code_license": "MIT",
+  "assets_license": "CC BY 4.0",
+  "author": "Tangram Games; music by potato-tan",
+  "license_source": "https://github.com/SimonLarsen/tobutobugirl/blob/master/README.md"
+}
+-- The C compiler identification is GNU 12.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc-12 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for one of the modules 'sdl2'
+-- Peanut-SDL 1.3.0 (git: v1.3.0-27-gd0bcca7-dirty) will build with the following options:
+--   CC:      /usr/bin/aarch64-linux-gnu-gcc-12 'GNU' on 'Linux'
+--   CFLAGS:  -B/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu/ -isystem /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include/aarch64-linux-gnu -isystem /home/japa1/darkos-qemu-m5/sdk/sysroot/usr/include
+--   LDFLAGS: -L/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/home/japa1/darkos-qemu-m5/sdk/sysroot/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/home/japa1/darkos-qemu-m5/sdk/sysroot/opt/darkos-graphics/usr/lib/aarch64-linux-gnu
+-- Configuring done (3.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/japa1/darkos-qemu-m5/gb/build
+[1/3] Building C object CMakeFiles/peanut-sdl.dir/minigb_apu/minigb_apu.c.o
+[2/3] Building C object CMakeFiles/peanut-sdl.dir/peanut_sdl.c.o
+/home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/peanut_sdl.c: In function ‘main’:
+/home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/peanut_sdl.c:1362:25: warning: ‘gb_tick_rtc’ is deprecated: RTC is now ticked internally; this function has no effect [-Wdeprecated-declarations]
+ 1362 |                         gb_tick_rtc(&gb);
+      |                         ^~~~~~~~~~~
+In file included from /home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/peanut_sdl.c:24:
+/home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/../../peanut_gb.h:3855:6: note: declared here
+ 3855 | void gb_tick_rtc(struct gb_s *gb)
+      |      ^~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/peanut_sdl.c:1435:33: warning: ‘gb_tick_rtc’ is deprecated: RTC is now ticked internally; this function has no effect [-Wdeprecated-declarations]
+ 1435 |                                 gb_tick_rtc(&gb);
+      |                                 ^~~~~~~~~~~
+/home/japa1/darkos-qemu-m5/repos/Peanut-GB/examples/sdl2/../../peanut_gb.h:3855:6: note: declared here
+ 3855 | void gb_tick_rtc(struct gb_s *gb)
+      |      ^~~~~~~~~~~
+[3/3] Linking C executable peanut-sdl
+Compile/link wall time: 1.088 seconds
+-- The C compiler identification is GNU 12.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc-12 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'sdl2'
+--   Found sdl2, version 2.32.4
+-- Configuring done (4.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/japa1/darkos-qemu-m5/apps/sdl-demo
+[1/2] Building C object CMakeFiles/sdl-demo.dir/main.c.o
+[2/2] Linking C executable sdl-demo
+Compile/link wall time: 0.405 seconds
+real 110.68
+user 220.97
+sys 29.21

@@ -1,11 +1,60 @@
 # dArkOS on ARM64 QEMU
 
-Milestone 1 builds Linux 5.10.226 for QEMU `virt` and boots the existing dArkOS
-userspace on an x86-64 Ubuntu WSL2 host. EmulationStation and accelerated graphics
-are later milestones. See [validation.md](docs/validation.md) for measured results.
+## Quick start: prepared environment
 
-Milestone 2 now validates kmscube and a native SDL2 KMSDRM/GLES demo using a
-private Mesa stack. See [graphics.md](docs/graphics.md) for setup and measured results.
+Run the four entry points **inside Ubuntu 26.04 on WSL2 with WSLg**. Large images,
+SDKs and builds stay on the Linux filesystem, outside Git. There is no published
+image download yet; runtime and SDK exports are local directories.
+
+```bash
+export WORK_DIR="$HOME/darkos-dev"
+bash setup.sh import /path/to/runtime-bundle
+bash vm.sh es
+# After quitting ES:
+bash vm.sh stop
+```
+
+Import verifies checksums, creates a separate working disk and installs your own
+SSH identity. The graphical QEMU window opens automatically; SSH remains local
+to `127.0.0.1:2222`. The bundle's original disk is preserved.
+
+## Quick start: prepare and develop
+
+Download the two original dArkOS archive volumes described below into `images/`.
+Then, as your normal WSL user:
+
+```bash
+export WORK_DIR="$HOME/darkos-dev"
+bash setup.sh source
+bash sdk.sh prepare
+bash build.sh build all
+bash build.sh deploy all
+bash vm.sh es
+```
+
+Preparation and deployment start/wait for the VM themselves and shut it down
+afterwards if they started it. Builds run on the host and need no running VM.
+The default UI uses the original dArkOS NES Box theme with keyboard controls,
+the verified Game Boy emulator, and a rotating OpenGL triangle test.
+
+```bash
+bash build.sh app demos/sdk-app
+bash build.sh deploy-app "$WORK_DIR/apps/sdk-app/sdl-demo"
+bash vm.sh ssh 'uname -a'
+bash vm.sh stop
+bash vm.sh check
+```
+
+See [the environment and SDK guide](docs/workflow.md) for commands, local
+export/import, prerequisites and validation results. The milestone guides below
+retain the original low-level procedures and evidence.
+
+The original procedure below builds Linux 5.10.226 for QEMU `virt` and boots the
+existing dArkOS userspace on an x86-64 Ubuntu WSL2 host.
+See [validation.md](docs/validation.md) for measured boot results.
+
+For the low-level kmscube and native SDL2 KMSDRM/GLES procedure using a private
+Mesa stack, see [graphics.md](docs/graphics.md).
 
 ## Host and source
 

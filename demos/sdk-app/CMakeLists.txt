@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(darkos_sdk_app C)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(SDL2 REQUIRED IMPORTED_TARGET sdl2)
+find_library(OPENGL_LIBRARY OpenGL REQUIRED)
+add_executable(sdl-demo main.c)
+target_link_libraries(sdl-demo PRIVATE PkgConfig::SDL2 ${OPENGL_LIBRARY})

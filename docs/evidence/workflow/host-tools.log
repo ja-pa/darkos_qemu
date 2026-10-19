@@ -1,0 +1,5 @@
+compiler: aarch64-linux-gnu-g++-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+cmake: cmake version 4.2.3
+ninja: 1.13.2
+qemu: QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.2)
+wsl_kernel: Linux paja-lo 6.18.33.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026 x86_64 GNU/Linux

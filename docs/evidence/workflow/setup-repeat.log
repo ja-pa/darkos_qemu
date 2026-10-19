@@ -1,0 +1,192 @@
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [738 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [329 kB]
+Fetched 1205 kB in 1s (1469 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.12ubuntu2.26.04.2).
+gcc-12 is already the newest version (12.5.0-9ubuntu1).
+gcc-12-aarch64-linux-gnu is already the newest version (12.5.0-9ubuntu1cross1).
+binutils-aarch64-linux-gnu is already the newest version (2.46-3ubuntu2).
+bc is already the newest version (1.07.1-4build1).
+bison is already the newest version (2:3.8.2+dfsg-1ubuntu0.26.04.1).
+flex is already the newest version (2.6.4-8.2build2).
+libssl-dev is already the newest version (3.5.5-1ubuntu3.7).
+libelf-dev is already the newest version (0.194-4).
+7zip is already the newest version (26.00+dfsg-1).
+qemu-system-arm is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+qemu-system-gui is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+qemu-utils is already the newest version (1:10.2.1+ds-1ubuntu3.2).
+btrfs-progs is already the newest version (6.17.1-1build1).
+fdisk is already the newest version (2.41.3-3ubuntu2.2).
+dosfstools is already the newest version (4.2-1.2build1).
+rsync is already the newest version (3.4.1+ds1-7ubuntu0.3).
+git is already the newest version (1:2.53.0-1ubuntu1.1).
+python3 is already the newest version (3.14.3-0ubuntu2).
+openssh-client is already the newest version (1:10.2p1-2ubuntu3.8).
+kmod is already the newest version (34.2-2ubuntu2).
+util-linux is already the newest version (2.41.3-3ubuntu2.2).
+g++-12-aarch64-linux-gnu is already the newest version (12.5.0-9ubuntu1cross1).
+cmake is already the newest version (4.2.3-2ubuntu2).
+ninja-build is already the newest version (1.13.2-1).
+pkg-config is already the newest version (2.5.1-4).
+Solving dependencies...
+The following additional packages will be installed:
+  libnss-systemd libpam-systemd libsystemd-shared libsystemd0 libudev1 systemd
+  systemd-cryptsetup systemd-resolved systemd-sysv
+The following packages will be upgraded:
+  libnss-systemd libpam-systemd libsystemd-shared libsystemd0 libudev1 systemd
+  systemd-cryptsetup systemd-resolved systemd-sysv udev
+10 upgraded, 0 newly installed, 0 to remove and 58 not upgraded.
+Need to get 8702 kB of archives.
+After this operation, 317 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libsystemd0 amd64 259.9-0ubuntu0.1 [481 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpam-systemd amd64 259.9-0ubuntu0.1 [273 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 systemd-sysv amd64 259.9-0ubuntu0.1 [9420 B]
+Get:4 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 systemd-resolved amd64 259.9-0ubuntu0.1 [300 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libsystemd-shared amd64 259.9-0ubuntu0.1 [2473 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 systemd amd64 259.9-0ubuntu0.1 [3137 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 systemd-cryptsetup amd64 259.9-0ubuntu0.1 [125 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 udev amd64 259.9-0ubuntu0.1 [1525 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libudev1 amd64 259.9-0ubuntu0.1 [151 kB]
+Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libnss-systemd amd64 259.9-0ubuntu0.1 [227 kB]
+Fetched 8702 kB in 3s (3427 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57368 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking libsystemd0:amd64 (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Setting up libsystemd0:amd64 (259.9-0ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57368 files and directories currently installed.)
+Preparing to unpack .../libpam-systemd_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking libpam-systemd:amd64 (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../systemd-sysv_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking systemd-sysv (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../systemd-resolved_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking systemd-resolved (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../libsystemd-shared_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking libsystemd-shared:amd64 (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Setting up libsystemd-shared:amd64 (259.9-0ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57368 files and directories currently installed.)
+Preparing to unpack .../systemd_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking systemd (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../systemd-cryptsetup_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking systemd-cryptsetup (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../udev_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking udev (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Preparing to unpack .../libudev1_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking libudev1:amd64 (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Setting up libudev1:amd64 (259.9-0ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57372 files and directories currently installed.)
+Preparing to unpack .../libnss-systemd_259.9-0ubuntu0.1_amd64.deb ...
+Unpacking libnss-systemd:amd64 (259.9-0ubuntu0.1) over (259.5-0ubuntu3.4) ...
+Setting up libnss-systemd:amd64 (259.9-0ubuntu0.1) ...
+Setting up systemd (259.9-0ubuntu0.1) ...
+Setting up systemd-cryptsetup (259.9-0ubuntu0.1) ...
+Setting up udev (259.9-0ubuntu0.1) ...
+Setting up systemd-resolved (259.9-0ubuntu0.1) ...
+Installing new version of config file /etc/systemd/resolved.conf ...
+Setting up systemd-sysv (259.9-0ubuntu0.1) ...
+Setting up libpam-systemd:amd64 (259.9-0ubuntu0.1) ...
+Processing triggers for man-db (2.13.1-1build1) ...
+Processing triggers for dbus (1.16.2-2ubuntu4) ...
+Processing triggers for shared-mime-info (2.4-5build3) ...
+Processing triggers for procps (2:4.0.4-9ubuntu1) ...
+Processing triggers for libc-bin (2.43-2ubuntu2.4) ...
+bef65b1793524bc7bd27c4d70d0ce59cbebee032
+aarch64-linux-gnu-gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+make: Entering directory '/home/japa1/darkos-qemu-m5/kernel'
+  GEN     Makefile
+*** Default configuration is based on 'defconfig'
+#
+# configuration written to .config
+#
+make: Leaving directory '/home/japa1/darkos-qemu-m5/kernel'
+Using /home/japa1/darkos-qemu-m5/build/.config as base
+Merging /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment
+Value of CONFIG_LOCALVERSION is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: CONFIG_LOCALVERSION=""
+New value: CONFIG_LOCALVERSION="-darkos-qemu"
+
+Value of CONFIG_LOCALVERSION_AUTO is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: CONFIG_LOCALVERSION_AUTO=y
+New value: # CONFIG_LOCALVERSION_AUTO is not set
+
+Value of CONFIG_ARCH_SUNXI is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: CONFIG_ARCH_SUNXI=y
+New value: # CONFIG_ARCH_SUNXI is not set
+
+Value of CONFIG_BTRFS_FS is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: CONFIG_BTRFS_FS=m
+New value: CONFIG_BTRFS_FS=y
+
+Value of CONFIG_TMPFS_POSIX_ACL is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: # CONFIG_TMPFS_POSIX_ACL is not set
+New value: CONFIG_TMPFS_POSIX_ACL=y
+
+Value of CONFIG_DRM is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: CONFIG_DRM=m
+New value: CONFIG_DRM=y
+
+Value of CONFIG_DRM_VIRTIO_GPU is redefined by fragment /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/configs/qemu-arm64.fragment:
+Previous value: # CONFIG_DRM_VIRTIO_GPU is not set
+New value: CONFIG_DRM_VIRTIO_GPU=y
+
+#
+# merged configuration written to /home/japa1/darkos-qemu-m5/build/.config (needs make)
+#
+make: Entering directory '/home/japa1/darkos-qemu-m5/kernel'
+  GEN     Makefile
+#
+# configuration written to .config
+#
+make: Leaving directory '/home/japa1/darkos-qemu-m5/kernel'
+make: Entering directory '/home/japa1/darkos-qemu-m5/kernel'
+  SYNC    include/config/auto.conf
+  GEN     Makefile
+  GEN     Makefile
+  CALL    /home/japa1/darkos-qemu-m5/kernel/scripts/atomic/check-atomics.sh
+  CALL    /home/japa1/darkos-qemu-m5/kernel/scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+make: Leaving directory '/home/japa1/darkos-qemu-m5/kernel'
+39272166ebbf69ef5af121d5a7695e22aeb1fa0a7b5fbc8bff16936ebd3376b7  /home/japa1/darkos-qemu-m5/build/arch/arm64/boot/Image
+d721e22f9666ae8001869b2b41fbf0f6f29a664e4db06475a9ab9af73a82ef3b  /home/japa1/darkos-qemu-m5/build/.config
+image: /home/japa1/darkos-qemu-m5/images/work.qcow2
+file format: qcow2
+virtual size: 7.5 GiB (8053063680 bytes)
+disk size: 1.52 GiB
+cluster_size: 65536
+backing file: /home/japa1/darkos-qemu-m5/images/dArkOS_RG353m_trixie_01312026.img
+backing file format: raw
+Format specific information:
+    compat: 1.1
+    compression type: zlib
+    lazy refcounts: false
+    refcount bits: 16
+    corrupt: false
+    extended l2: false
+Child node '/file':
+    filename: /home/japa1/darkos-qemu-m5/images/work.qcow2
+    protocol type: file
+    file length: 1.52 GiB (1635581952 bytes)
+    disk size: 1.52 GiB
+
+image: /home/japa1/darkos-qemu-m5/images/dArkOS_RG353m_trixie_01312026.img
+file format: raw
+virtual size: 7.5 GiB (8053063680 bytes)
+disk size: 7.5 GiB
+Child node '/file':
+    filename: /home/japa1/darkos-qemu-m5/images/dArkOS_RG353m_trixie_01312026.img
+    protocol type: file
+    file length: 7.5 GiB (8053063680 bytes)
+    disk size: 7.5 GiB
+QEMU guest profile applied to overlay. Base image was not modified.
+/dev/nbd0 disconnected
+Setup complete. Next: bash sdk.sh prepare (source), or bash vm.sh es (runtime import).
+real 186.28
+user 123.01
+sys 38.92

@@ -1,0 +1,17 @@
+2026-10-19 17:40:05	INFO	SDL video backend: KMSDRM
+2026-10-19 17:40:07	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:40:07	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:40:07	INFO	OpenGL vendor: Mesa
+2026-10-19 17:43:33	INFO	SDL video backend: KMSDRM
+2026-10-19 17:43:33	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:43:33	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:43:33	INFO	OpenGL vendor: Mesa
+2026-10-19 17:45:36	INFO	SDL video backend: KMSDRM
+2026-10-19 17:45:36	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:45:36	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:45:36	INFO	OpenGL vendor: Mesa
+2026-10-19 17:47:37	INFO	SDL video backend: KMSDRM
+2026-10-19 17:47:37	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 17:47:37	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 17:47:37	INFO	OpenGL vendor: Mesa
+PID=1346; runtime libraries verified without libMali/libgo2

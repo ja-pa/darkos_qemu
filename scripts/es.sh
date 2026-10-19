@@ -23,7 +23,7 @@ case ${1:-help} in
     [[ $WORK_DIR != / && $ES_SYSROOT == "$WORK_DIR"/* ]] || fail 'ES_SYSROOT must be inside WORK_DIR'
     mkdir -p "$ES_SYSROOT"
     # Tar preserves all target symlinks. Only the copied sysroot is normalized.
-    remote 'sudo -n tar -C / -cf - usr/include usr/lib/aarch64-linux-gnu usr/lib/gcc usr/lib/pkgconfig lib opt/darkos-graphics/usr usr/share/pkgconfig' |
+    remote 'sudo -n tar -C / -cf - usr/include usr/lib/aarch64-linux-gnu usr/lib/gcc usr/lib/pkgconfig lib opt/darkos-graphics/usr usr/share/pkgconfig usr/share/doc usr/share/common-licenses' |
       tar -C "$ES_SYSROOT" -xf -
     python3 "$PROJECT_DIR/scripts/es-sysroot.py" "$ES_SYSROOT"
     remote 'dpkg-query -W' > "$logs/sysroot-packages.tsv"
@@ -79,6 +79,7 @@ case ${1:-help} in
     ;;
   deploy)
     assert_vm
+    remote 'if pidof emulationstation >/dev/null; then echo "Quit ES before deployment" >&2; exit 1; fi'
     [[ -s $ES_BUILD_DIR/emulationstation ]] || fail 'Run es.sh build first'
     mkdir -p "$WORK_DIR/es/stage"
     aarch64-linux-gnu-strip --strip-debug -o "$WORK_DIR/es/stage/emulationstation" "$ES_BUILD_DIR/emulationstation"
@@ -87,10 +88,11 @@ case ${1:-help} in
     tar -C "$ES_SRC" -cf - resources | remote 'sudo -n tar -C /opt/darkos-es -xf -'
     tar -C "$PROJECT_DIR" -cf - scripts/es-env.sh scripts/es-audit.sh demos/sdl-gl21/probe.c fixtures/es |
       remote 'sudo -n tar -C /opt/darkos-es -xf -'
-    remote 'sudo -n mkdir -p /opt/darkos-es/home; sudo -n cp -a /opt/darkos-es/fixtures/es/. /opt/darkos-es/home/'
+    remote 'sudo -n mkdir -p /opt/darkos-es/home; sudo -n cp -an /opt/darkos-es/fixtures/es/. /opt/darkos-es/home/'
     ;;
   run)
     assert_vm
+    remote 'if pidof emulationstation >/dev/null; then echo "ES is already running" >&2; exit 1; fi'
     remote 'cd /opt/darkos-es && sudo -n bash scripts/es-env.sh ./emulationstation --home /opt/darkos-es/home --debug --no-splash' |& tee "$logs/run.log"
     ;;
   *) fail 'Usage: es.sh prepare|sysroot|probe|build|deploy|run';;

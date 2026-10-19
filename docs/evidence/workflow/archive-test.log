@@ -1,0 +1,30 @@
+
+7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+ 64-bit locale=C.UTF-8 Threads:16 OPEN_MAX:10240, ASM
+
+Scanning the drive for archives:
+1 file, 2044723200 bytes (1950 MiB)
+
+Testing archive: /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/images/dArkOS_RG353m_trixie_01312026.img.7z.001
+--
+Path = /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/images/dArkOS_RG353m_trixie_01312026.img.7z.001
+Type = Split
+Physical Size = 2044723200
+Volumes = 2
+Total Physical Size = 3482983946
+----
+Path = dArkOS_RG353m_trixie_01312026.img.7z
+Size = 3482983946
+--
+Path = dArkOS_RG353m_trixie_01312026.img.7z
+Type = 7z
+Physical Size = 3482983946
+Headers Size = 170
+Method = LZMA2:24
+Solid = -
+Blocks = 1
+
+Everything is Ok
+
+Size:       8053063680
+Compressed: 3482983946

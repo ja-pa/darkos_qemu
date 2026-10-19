@@ -1,0 +1,14 @@
+aarch64-linux-gnu-g++-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+cmake version 4.2.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+1.13.2
+2.5.1
+db23162142f2d01c4c08216895fd793da243d19b
+ 96aebcb8ae2062ad020186e32fd301db7c3a0c88 external/pugixml (v1.14-31-g96aebcb)
+38da94916f2bf6e1e55b2ad246ab7bb05bd6fd5b0a5dcef16ae3c761842ea6f5  /mnt/c/Users/japa1/Documents/ChatGPT/darkos_qemu/patches/emulationstation/0001-qemu-build.patch
+e00875d7eac1b1ae6c19f2dc7afd3c880ae9b4f84b0132b6153b0a99dd9bff95  /home/japa1/darkos-qemu-m5/es/build/emulationstation
