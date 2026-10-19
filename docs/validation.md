@@ -13,6 +13,8 @@ including a fresh overlay for the repeat run.
 - Kernel source: `ja-pa/kernel_5_10_226`, commit
   `bef65b1793524bc7bd27c4d70d0ce59cbebee032`, Linux 5.10.226.
 - Existing `darkos-tools` checkout: `2edeba378ee819a01c0a471151cdc85f2df00ae5`.
+- Image origin: [christianhaitian/dArkOS release v01302026](https://github.com/christianhaitian/dArkOS/releases#release-v01302026),
+  using the `dArkOS_RG353m_trixie_01312026.img` download split into `.7z.001` and `.7z.002`.
 - The Windows source checkout has broken symlinks and case-handling problems.
   Build sources were cloned from its Git objects onto WSL ext4, without copying
   working-tree files. No kernel source patches were made.

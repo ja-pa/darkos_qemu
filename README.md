@@ -40,6 +40,11 @@ The reviewed complete configuration is stored as `configs/qemu-arm64.config`.
 
 ## Existing image
 
+The image used for this project was downloaded from
+[christianhaitian/dArkOS release v01302026](https://github.com/christianhaitian/dArkOS/releases#release-v01302026).
+The tested variant is `dArkOS_RG353m_trixie_01312026.img`, distributed as the two
+archive volumes listed below.
+
 Keep both original files together under `images/`:
 
 ```text
