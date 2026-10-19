@@ -2,3 +2,4 @@
 *.config text eol=lf
 *.fragment text eol=lf
 *.md text eol=lf
+*.patch text eol=lf

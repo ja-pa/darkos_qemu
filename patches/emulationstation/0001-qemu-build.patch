@@ -1,0 +1,68 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 247783b5..5562991c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 2.8)
++cmake_minimum_required(VERSION 3.5)
+ 
+ option(GLES "Set to ON if targeting Embedded OpenGL" ${GLES})
+ option(GL "Set to ON if targeting Desktop OpenGL" ${GL})
+@@ -9,6 +9,10 @@ option(SDL_KMSDRM "Use SDL2 window/context path instead of libgo2" OFF)
+ 
+ project(emulationstation-all)
+ 
++if(SDL_KMSDRM AND (GLES OR NOT GL))
++    message(FATAL_ERROR "SDL_KMSDRM requires GL=ON and GLES=OFF; GLES10 still uses libgo2")
++endif()
++
+ #-------------------------------------------------------------------------------
+ #add local find scripts to CMAKE path
+ LIST(APPEND CMAKE_MODULE_PATH
+@@ -277,7 +281,7 @@ endif()
+ 
+ #-------------------------------------------------------------------------------
+ # set up build directories
+-set(dir ${CMAKE_CURRENT_SOURCE_DIR})
++set(dir ${CMAKE_CURRENT_BINARY_DIR})
+ set(EXECUTABLE_OUTPUT_PATH ${dir} CACHE PATH "Build directory" FORCE)
+ set(LIBRARY_OUTPUT_PATH ${dir} CACHE PATH "Build directory" FORCE)
+ 
+diff --git a/es-core/src/InputManager.cpp b/es-core/src/InputManager.cpp
+index 0836cb30..64d80725 100644
+--- a/es-core/src/InputManager.cpp
++++ b/es-core/src/InputManager.cpp
+@@ -443,10 +443,14 @@ void InputManager::doOnFinish()
+ 
+ std::string InputManager::getConfigPath()
+ {
++#ifdef USE_SDL_KMSDRM
++	return Utils::FileSystem::getHomePath() + "/.emulationstation/es_input.cfg";
++#else
+ 	std::string path; // = Utils::FileSystem::getHomePath();
+ 	//path += "/.emulationstation/es_input.cfg";
+ 	path += "/etc/emulationstation/es_input.cfg";
+ 	return path;
++#endif
+ }
+ 
+ std::string InputManager::getTemporaryConfigPath()
+diff --git a/es-core/src/renderers/Renderer.cpp b/es-core/src/renderers/Renderer.cpp
+index d6cb491d..7738956b 100644
+--- a/es-core/src/renderers/Renderer.cpp
++++ b/es-core/src/renderers/Renderer.cpp
+@@ -90,6 +90,14 @@ namespace Renderer
+ 		}
+ 
+ #ifdef USE_SDL_KMSDRM
++		const char* actualDriver = SDL_GetCurrentVideoDriver();
++		LOG(LogInfo) << "SDL video backend: " << (actualDriver ? actualDriver : "<null>");
++		if (!actualDriver || SDL_strcasecmp(actualDriver, "kmsdrm") != 0)
++		{
++			LOG(LogError) << "SDL_KMSDRM build requires the kmsdrm backend";
++			SDL_QuitSubSystem(SDL_INIT_VIDEO);
++			return false;
++		}
+ 		initialCursorState = (SDL_ShowCursor(0) != 0);
+ 
+ 		if (!Settings::getInstance()->getBool("Windowed"))

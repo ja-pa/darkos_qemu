@@ -1,0 +1,234 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libfmt10:armhf libhiredis1.1.0:armhf libxxhash0:armhf
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  comerr-dev curl e2fsprogs krb5-locales krb5-multidev libasound2-data
+  libasound2-dev:armhf libasound2t64 libasound2t64:armhf libatopology2t64
+  libbrotli-dev libbz2-dev libcom-err2 libcom-err2:armhf libcurl3t64-gnutls
+  libcurl4t64 libevent-2.1-7t64 libext2fs2t64 libflac-dev libfreetype6
+  libfreetype6:armhf libgmp-dev libgmpxx4ldbl libgnutls-dane0t64
+  libgnutls-openssl27t64 libgnutls28-dev libgnutls30t64 libgnutls30t64:armhf
+  libgssapi-krb5-2 libgssapi-krb5-2:armhf libgssrpc4t64 libidn2-dev
+  libk5crypto3 libk5crypto3:armhf libkadm5clnt-mit12 libkadm5srv-mit12
+  libkdb5-10t64 libkrb5-3 libkrb5-3:armhf libkrb5-dev libkrb5support0
+  libkrb5support0:armhf libldap-dev libmpg123-0t64 libmpg123-0t64:armhf
+  libmpg123-dev libnghttp2-14 libnghttp2-dev libnghttp3-dev libogg-dev
+  libopus-dev libopusfile-dev libout123-0t64 libp11-kit-dev libpng-dev
+  libpng16-16t64 libpng16-16t64:armhf libpsl-dev librtmp-dev libss2
+  libssh2-1-dev libssh2-1t64 libssl-dev libssl3t64 libssl3t64:armhf
+  libsyn123-0t64 libtasn1-6 libtasn1-6:armhf libtasn1-6-dev libunbound8
+  libvlc-bin libvlc5 libvlccore9 libvorbis-dev libxmp-dev libzstd-dev logsave
+  nettle-dev openssl openssl-provider-legacy vlc-bin vlc-data vlc-plugin-base
+Suggested packages:
+  doc-base krb5-doc libcurl4-doc libidn-dev freetype2-doc gmp-doc libgmp10-doc
+  libmpfr-dev gnutls-bin gnutls-doc krb5-user libnghttp2-doc p11-kit-doc
+  libssl-doc rapidjson-doc
+Recommended packages:
+  libpng-tools libtasn1-doc
+The following NEW packages will be installed:
+  comerr-dev krb5-multidev libbrotli-dev libbz2-dev libcurl4-openssl-dev
+  libevent-2.1-7t64 libflac-dev libfreeimage-dev libfreetype-dev libgmp-dev
+  libgmpxx4ldbl libgnutls-dane0t64 libgnutls-openssl27t64 libgnutls28-dev
+  libgssrpc4t64 libidn2-dev libkadm5clnt-mit12 libkadm5srv-mit12 libkdb5-10t64
+  libkrb5-dev libldap-dev libmpg123-dev libnghttp2-dev libnghttp3-dev
+  libogg-dev libopus-dev libopusfile-dev libout123-0t64 libp11-kit-dev
+  libpng-dev libpsl-dev librtmp-dev libsdl2-mixer-dev libssh2-1-dev libssl-dev
+  libsyn123-0t64 libtasn1-6-dev libunbound8 libvlc-dev libvorbis-dev
+  libxmp-dev libzstd-dev nettle-dev rapidjson-dev
+The following packages will be upgraded:
+  curl e2fsprogs krb5-locales libasound2-data libasound2-dev
+  libasound2-dev:armhf libasound2t64 libasound2t64:armhf libatopology2t64
+  libcom-err2 libcom-err2:armhf libcurl3t64-gnutls libcurl4t64 libext2fs2t64
+  libfreetype6 libfreetype6:armhf libgnutls30t64 libgnutls30t64:armhf
+  libgssapi-krb5-2 libgssapi-krb5-2:armhf libk5crypto3 libk5crypto3:armhf
+  libkrb5-3 libkrb5-3:armhf libkrb5support0 libkrb5support0:armhf
+  libmpg123-0t64 libmpg123-0t64:armhf libnghttp2-14 libpng16-16t64
+  libpng16-16t64:armhf libss2 libssh2-1t64 libssl3t64 libssl3t64:armhf
+  libtasn1-6 libtasn1-6:armhf libvlc-bin libvlc5 libvlccore9 logsave openssl
+  openssl-provider-legacy rsync vlc-bin vlc-data vlc-plugin-base
+47 upgraded, 44 newly installed, 0 to remove and 252 not upgraded.
+Inst logsave [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Inst libext2fs2t64 [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [arm64]) [e2fsprogs:arm64 on libext2fs2t64:arm64] [e2fsprogs:arm64 ]
+Conf libext2fs2t64 (1.47.2-3+b12 Debian:13.7/stable [arm64]) [e2fsprogs:arm64 ]
+Inst e2fsprogs [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Inst openssl-provider-legacy [3.5.4-1~deb13u1] (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Conf openssl-provider-legacy (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Inst libssl3t64 [3.5.4-1~deb13u1] (3.5.7-1~deb13u2 Debian:13.7/stable [arm64]) [libssl3t64:arm64 on libssl3t64:armhf] [libssl3t64:armhf on libssl3t64:arm64] [libssl3t64:armhf ]
+Inst libssl3t64:armhf [3.5.4-1~deb13u1] (3.5.7-1~deb13u2 Debian:13.7/stable [armhf])
+Inst rsync [3.4.1+ds1-5+deb13u1] (3.4.1+ds1-5+deb13u4 Debian:13.7/stable [arm64])
+Inst krb5-locales [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [all])
+Inst libcom-err2 [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [arm64]) [libcom-err2:arm64 on libcom-err2:armhf] [libcom-err2:armhf on libcom-err2:arm64] [libcom-err2:armhf ]
+Inst libcom-err2:armhf [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [armhf])
+Inst comerr-dev (2.1-1.47.2-3+b12 Debian:13.7/stable [arm64])
+Inst libgssapi-krb5-2:armhf [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [armhf]) [libgssapi-krb5-2:arm64 on libgssapi-krb5-2:armhf] [libgssapi-krb5-2:armhf on libgssapi-krb5-2:arm64] [libgssapi-krb5-2:arm64 ]
+Inst libgssapi-krb5-2 [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [arm64]) []
+Inst libkrb5-3:armhf [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [armhf]) [libkrb5-3:arm64 on libkrb5-3:armhf] [libkrb5-3:armhf on libkrb5-3:arm64] [libkrb5-3:arm64 ]
+Inst libkrb5-3 [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [arm64]) []
+Inst libkrb5support0 [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [arm64]) [libkrb5support0:arm64 on libkrb5support0:armhf] [libkrb5support0:armhf on libkrb5support0:arm64] [libkrb5support0:armhf libk5crypto3:arm64 ]
+Inst libkrb5support0:armhf [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [armhf]) [libk5crypto3:arm64 libk5crypto3:armhf ]
+Inst libk5crypto3:armhf [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [armhf]) [libk5crypto3:arm64 on libk5crypto3:armhf] [libk5crypto3:armhf on libk5crypto3:arm64] [libk5crypto3:arm64 ]
+Inst libk5crypto3 [1.21.3-5] (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libnghttp2-14 [1.64.0-1.1] (1.64.0-1.1+deb13u1 Debian:13.7/stable [arm64])
+Inst libssh2-1t64 [1.11.1-1] (1.11.1-1+deb13u2 Debian:13.7/stable [arm64])
+Inst curl [8.14.1-2+deb13u2] (8.14.1-2+deb13u5 Debian:13.7/stable [arm64]) []
+Inst libcurl4t64 [8.14.1-2+deb13u2] (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Inst libgssrpc4t64 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libkadm5clnt-mit12 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libkdb5-10t64 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libkadm5srv-mit12 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst krb5-multidev (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libatopology2t64 [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [arm64])
+Inst libasound2-dev:armhf [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [armhf]) [libasound2-dev:arm64 on libasound2-dev:armhf] [libasound2-dev:armhf on libasound2-dev:arm64] [libasound2-dev:arm64 ]
+Inst libasound2-dev [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [arm64]) []
+Inst libasound2t64 [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [arm64]) [libasound2t64:arm64 on libasound2t64:armhf] [libasound2t64:armhf on libasound2t64:arm64] [libasound2t64:armhf ]
+Inst libasound2t64:armhf [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [armhf]) []
+Inst libasound2-data [1.2.14-1] (1.2.14-1+deb13u1 Debian:13.7/stable [all])
+Inst libbrotli-dev (1.1.0-2+b7 Debian:13.7/stable [arm64])
+Inst libbz2-dev (1.0.8-6 Debian:13.7/stable [arm64])
+Inst libtasn1-6:armhf [4.20.0-2] (4.20.0-2+deb13u1 Debian:13.7/stable [armhf]) [libtasn1-6:arm64 on libtasn1-6:armhf] [libtasn1-6:armhf on libtasn1-6:arm64] [libtasn1-6:arm64 ]
+Inst libtasn1-6 [4.20.0-2] (4.20.0-2+deb13u1 Debian:13.7/stable [arm64])
+Inst libgnutls30t64 [3.8.9-3+deb13u1] (3.8.9-3+deb13u4 Debian:13.7/stable [arm64]) [libgnutls30t64:arm64 on libgnutls30t64:armhf] [libgnutls30t64:armhf on libgnutls30t64:arm64] [libgnutls30t64:armhf ]
+Inst libgnutls30t64:armhf [3.8.9-3+deb13u1] (3.8.9-3+deb13u4 Debian:13.7/stable [armhf])
+Inst libcurl3t64-gnutls [8.14.1-2+deb13u2] (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Inst libidn2-dev (2.3.8-2 Debian:13.7/stable [arm64])
+Inst libkrb5-dev (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Inst libldap-dev (2.6.10+dfsg-1 Debian:13.7/stable [arm64])
+Inst libnghttp2-dev (1.64.0-1.1+deb13u1 Debian:13.7/stable [arm64])
+Inst libnghttp3-dev (1.8.0-1 Debian:13.7/stable [arm64])
+Inst libpsl-dev (0.21.2-1.1+b1 Debian:13.7/stable [arm64])
+Inst libgmpxx4ldbl (2:6.3.0+dfsg-3 Debian:13.7/stable [arm64])
+Inst libgmp-dev (2:6.3.0+dfsg-3 Debian:13.7/stable [arm64])
+Inst libevent-2.1-7t64 (2.1.12-stable-10+b1 Debian:13.7/stable [arm64])
+Inst libunbound8 (1.22.0-2+deb13u3 Debian:13.7/stable [arm64])
+Inst libgnutls-dane0t64 (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Inst libgnutls-openssl27t64 (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Inst libp11-kit-dev (0.25.5-3 Debian:13.7/stable [arm64])
+Inst libtasn1-6-dev (4.20.0-2+deb13u1 Debian:13.7/stable [arm64])
+Inst nettle-dev (3.10.1-1 Debian:13.7/stable [arm64])
+Inst libgnutls28-dev (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Inst librtmp-dev (2.4+20151223.gitfa8646d.1-2+b5 Debian:13.7/stable [arm64])
+Inst libssl-dev (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Inst libssh2-1-dev (1.11.1-1+deb13u2 Debian:13.7/stable [arm64])
+Inst libzstd-dev (1.5.7+dfsg-1 Debian:13.7/stable [arm64])
+Inst libcurl4-openssl-dev (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Inst libogg-dev (1.3.5-3+b2 Debian:13.7/stable [arm64])
+Inst libflac-dev (1.5.0+ds-2 Debian:13.7/stable [arm64])
+Inst libfreeimage-dev (3.18.0+ds2-11 Debian:13.7/stable [arm64])
+Inst libpng16-16t64:armhf [1.6.48-1+deb13u1] (1.6.48-1+deb13u5 Debian:13.7/stable [armhf]) [libpng16-16t64:arm64 on libpng16-16t64:armhf] [libpng16-16t64:armhf on libpng16-16t64:arm64] [libpng16-16t64:arm64 ]
+Inst libpng16-16t64 [1.6.48-1+deb13u1] (1.6.48-1+deb13u5 Debian:13.7/stable [arm64])
+Inst libfreetype6 [2.13.3+dfsg-1] (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [arm64]) [libfreetype6:arm64 on libfreetype6:armhf] [libfreetype6:armhf on libfreetype6:arm64] [libfreetype6:armhf ]
+Inst libfreetype6:armhf [2.13.3+dfsg-1] (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [armhf])
+Inst libpng-dev (1.6.48-1+deb13u5 Debian:13.7/stable [arm64])
+Inst libfreetype-dev (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [arm64])
+Inst libmpg123-0t64 [1.32.10-1] (1.32.10-1+deb13u1 Debian:13.7/stable [arm64]) [libmpg123-0t64:arm64 on libmpg123-0t64:armhf] [libmpg123-0t64:armhf on libmpg123-0t64:arm64] [libmpg123-0t64:armhf ]
+Inst libmpg123-0t64:armhf [1.32.10-1] (1.32.10-1+deb13u1 Debian:13.7/stable [armhf])
+Inst libout123-0t64 (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Inst libsyn123-0t64 (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Inst libmpg123-dev (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Inst libopus-dev (1.5.2-2 Debian:13.7/stable [arm64])
+Inst libopusfile-dev (0.12-4+b3 Debian:13.7/stable [arm64])
+Inst libvorbis-dev (1.3.7-3 Debian:13.7/stable [arm64])
+Inst libxmp-dev (4.6.2-2 Debian:13.7/stable [arm64])
+Inst libsdl2-mixer-dev (2.8.1+dfsg-2 Debian:13.7/stable [arm64])
+Inst libss2 [1.47.2-3+b7] (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Inst libvlccore9 [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Inst libvlc5 [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Inst vlc-bin [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [arm64]) []
+Inst libvlc-bin [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Inst libvlc-dev (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Inst openssl [3.5.4-1~deb13u1] (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Inst rapidjson-dev (1.1.0+dfsg2-7.4 Debian:13.7/stable [all])
+Inst vlc-plugin-base [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [arm64]) []
+Inst vlc-data [3.0.22-0+deb13u1] (3.0.23-0+deb13u1 Debian:13.7/stable [all])
+Conf logsave (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Conf e2fsprogs (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Conf libssl3t64 (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Conf libssl3t64:armhf (3.5.7-1~deb13u2 Debian:13.7/stable [armhf])
+Conf rsync (3.4.1+ds1-5+deb13u4 Debian:13.7/stable [arm64])
+Conf krb5-locales (1.21.3-5+deb13u1 Debian:13.7/stable [all])
+Conf libcom-err2 (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Conf libcom-err2:armhf (1.47.2-3+b12 Debian:13.7/stable [armhf])
+Conf comerr-dev (2.1-1.47.2-3+b12 Debian:13.7/stable [arm64])
+Conf libgssapi-krb5-2:armhf (1.21.3-5+deb13u1 Debian:13.7/stable [armhf])
+Conf libgssapi-krb5-2 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkrb5-3:armhf (1.21.3-5+deb13u1 Debian:13.7/stable [armhf])
+Conf libkrb5-3 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkrb5support0 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkrb5support0:armhf (1.21.3-5+deb13u1 Debian:13.7/stable [armhf])
+Conf libk5crypto3:armhf (1.21.3-5+deb13u1 Debian:13.7/stable [armhf])
+Conf libk5crypto3 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libnghttp2-14 (1.64.0-1.1+deb13u1 Debian:13.7/stable [arm64])
+Conf libssh2-1t64 (1.11.1-1+deb13u2 Debian:13.7/stable [arm64])
+Conf curl (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Conf libcurl4t64 (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Conf libgssrpc4t64 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkadm5clnt-mit12 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkdb5-10t64 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libkadm5srv-mit12 (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf krb5-multidev (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libatopology2t64 (1.2.14-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libasound2-dev:armhf (1.2.14-1+deb13u1 Debian:13.7/stable [armhf])
+Conf libasound2-dev (1.2.14-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libasound2t64 (1.2.14-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libasound2t64:armhf (1.2.14-1+deb13u1 Debian:13.7/stable [armhf])
+Conf libasound2-data (1.2.14-1+deb13u1 Debian:13.7/stable [all])
+Conf libbrotli-dev (1.1.0-2+b7 Debian:13.7/stable [arm64])
+Conf libbz2-dev (1.0.8-6 Debian:13.7/stable [arm64])
+Conf libtasn1-6:armhf (4.20.0-2+deb13u1 Debian:13.7/stable [armhf])
+Conf libtasn1-6 (4.20.0-2+deb13u1 Debian:13.7/stable [arm64])
+Conf libgnutls30t64 (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Conf libgnutls30t64:armhf (3.8.9-3+deb13u4 Debian:13.7/stable [armhf])
+Conf libcurl3t64-gnutls (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Conf libidn2-dev (2.3.8-2 Debian:13.7/stable [arm64])
+Conf libkrb5-dev (1.21.3-5+deb13u1 Debian:13.7/stable [arm64])
+Conf libldap-dev (2.6.10+dfsg-1 Debian:13.7/stable [arm64])
+Conf libnghttp2-dev (1.64.0-1.1+deb13u1 Debian:13.7/stable [arm64])
+Conf libnghttp3-dev (1.8.0-1 Debian:13.7/stable [arm64])
+Conf libpsl-dev (0.21.2-1.1+b1 Debian:13.7/stable [arm64])
+Conf libgmpxx4ldbl (2:6.3.0+dfsg-3 Debian:13.7/stable [arm64])
+Conf libgmp-dev (2:6.3.0+dfsg-3 Debian:13.7/stable [arm64])
+Conf libevent-2.1-7t64 (2.1.12-stable-10+b1 Debian:13.7/stable [arm64])
+Conf libunbound8 (1.22.0-2+deb13u3 Debian:13.7/stable [arm64])
+Conf libgnutls-dane0t64 (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Conf libgnutls-openssl27t64 (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Conf libp11-kit-dev (0.25.5-3 Debian:13.7/stable [arm64])
+Conf libtasn1-6-dev (4.20.0-2+deb13u1 Debian:13.7/stable [arm64])
+Conf nettle-dev (3.10.1-1 Debian:13.7/stable [arm64])
+Conf libgnutls28-dev (3.8.9-3+deb13u4 Debian:13.7/stable [arm64])
+Conf librtmp-dev (2.4+20151223.gitfa8646d.1-2+b5 Debian:13.7/stable [arm64])
+Conf libssl-dev (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Conf libssh2-1-dev (1.11.1-1+deb13u2 Debian:13.7/stable [arm64])
+Conf libzstd-dev (1.5.7+dfsg-1 Debian:13.7/stable [arm64])
+Conf libcurl4-openssl-dev (8.14.1-2+deb13u5 Debian:13.7/stable [arm64])
+Conf libogg-dev (1.3.5-3+b2 Debian:13.7/stable [arm64])
+Conf libflac-dev (1.5.0+ds-2 Debian:13.7/stable [arm64])
+Conf libfreeimage-dev (3.18.0+ds2-11 Debian:13.7/stable [arm64])
+Conf libpng16-16t64:armhf (1.6.48-1+deb13u5 Debian:13.7/stable [armhf])
+Conf libpng16-16t64 (1.6.48-1+deb13u5 Debian:13.7/stable [arm64])
+Conf libfreetype6 (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libfreetype6:armhf (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [armhf])
+Conf libpng-dev (1.6.48-1+deb13u5 Debian:13.7/stable [arm64])
+Conf libfreetype-dev (2.13.3+dfsg-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libmpg123-0t64 (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libmpg123-0t64:armhf (1.32.10-1+deb13u1 Debian:13.7/stable [armhf])
+Conf libout123-0t64 (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libsyn123-0t64 (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libmpg123-dev (1.32.10-1+deb13u1 Debian:13.7/stable [arm64])
+Conf libopus-dev (1.5.2-2 Debian:13.7/stable [arm64])
+Conf libopusfile-dev (0.12-4+b3 Debian:13.7/stable [arm64])
+Conf libvorbis-dev (1.3.7-3 Debian:13.7/stable [arm64])
+Conf libxmp-dev (4.6.2-2 Debian:13.7/stable [arm64])
+Conf libsdl2-mixer-dev (2.8.1+dfsg-2 Debian:13.7/stable [arm64])
+Conf libss2 (1.47.2-3+b12 Debian:13.7/stable [arm64])
+Conf libvlccore9 (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf libvlc5 (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf vlc-bin (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf libvlc-bin (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf libvlc-dev (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf openssl (3.5.7-1~deb13u2 Debian:13.7/stable [arm64])
+Conf rapidjson-dev (1.1.0+dfsg2-7.4 Debian:13.7/stable [all])
+Conf vlc-plugin-base (3.0.23-0+deb13u1 Debian:13.7/stable [arm64])
+Conf vlc-data (3.0.23-0+deb13u1 Debian:13.7/stable [all])

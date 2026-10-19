@@ -1,0 +1,38 @@
+Isolated graphics VM verified: PID 199937, disk /home/japa1/darkos-qemu-work/images/emulationstation.qcow2
+deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda4       7.2G  4.2G  1.8G  71% /
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libfreetype-dev is already the newest version (2.13.3+dfsg-1+deb13u1).
+libfreeimage-dev is already the newest version (3.18.0+ds2-11).
+libsdl2-mixer-dev is already the newest version (2.8.1+dfsg-2).
+libcurl4-openssl-dev is already the newest version (8.14.1-2+deb13u5).
+libvlc-dev is already the newest version (3.0.23-0+deb13u1).
+rapidjson-dev is already the newest version (1.1.0+dfsg2-7.4).
+libasound2-dev is already the newest version (1.2.14-1+deb13u1).
+libasound2-dev set to manually installed.
+rsync is already the newest version (3.4.1+ds1-5+deb13u4).
+The following packages were automatically installed and are no longer required:
+  libfmt10:armhf libhiredis1.1.0:armhf libxxhash0:armhf
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 252 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libfreetype-dev is already the newest version (2.13.3+dfsg-1+deb13u1).
+libfreeimage-dev is already the newest version (3.18.0+ds2-11).
+libsdl2-mixer-dev is already the newest version (2.8.1+dfsg-2).
+libcurl4-openssl-dev is already the newest version (8.14.1-2+deb13u5).
+libvlc-dev is already the newest version (3.0.23-0+deb13u1).
+rapidjson-dev is already the newest version (1.1.0+dfsg2-7.4).
+libasound2-dev is already the newest version (1.2.14-1+deb13u1).
+libasound2-dev set to manually installed.
+rsync is already the newest version (3.4.1+ds1-5+deb13u4).
+The following packages were automatically installed and are no longer required:
+  libfmt10:armhf libhiredis1.1.0:armhf libxxhash0:armhf
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 252 not upgraded.

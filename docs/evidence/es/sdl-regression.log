@@ -1,0 +1,10 @@
+Isolated graphics VM verified: PID 199937, disk /home/japa1/darkos-qemu-work/images/emulationstation.qcow2
+Isolated graphics VM verified: PID 199937, disk /home/japa1/darkos-qemu-work/images/emulationstation.qcow2
+DRM device: /dev/dri/card0
+SDL runtime: 2.32.4
+SDL video backend: KMSDRM
+GL_VENDOR: Mesa
+GL_RENDERER: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+GL_VERSION: OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1
+Presented frames: 9560; elapsed: 30.004 seconds
+Application exit status: 0

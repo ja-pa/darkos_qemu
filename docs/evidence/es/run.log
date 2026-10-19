@@ -1,0 +1,26 @@
+2026-10-19 14:28:00	INFO	EmulationStation - v2.13.0.0 CHMOD, built Oct 19 2026 - 20:24:14
+2026-10-19 14:28:00	INFO	Parsing XML file "/opt/darkos-es/resources/mamenames.xml"...
+2026-10-19 14:28:01	INFO	Parsing XML file "/opt/darkos-es/resources/mamebioses.xml"...
+2026-10-19 14:28:01	INFO	Parsing XML file "/opt/darkos-es/resources/mamedevices.xml"...
+2026-10-19 14:28:01	INFO	Window::init
+2026-10-19 14:28:01	INFO	Creating window...
+2026-10-19 14:28:01	INFO	SDL_VIDEODRIVER=kmsdrm
+2026-10-19 14:28:01	INFO	SDL video backend: KMSDRM
+2026-10-19 14:28:01	INFO	SDL desktop mode: 640x480 format=SDL_PIXELFORMAT_ARGB8888 refresh=60
+2026-10-19 14:28:01	INFO	SDL GL attributes requested: rgba=8/8/8 depth=24 stencil=1 doublebuffer=1 version=2.1 profile=compatibility
+2026-10-19 14:28:01	INFO	SDL window request: 640x480 screen=640x480 flags=0x2003
+2026-10-19 14:28:02	INFO	Created window successfully.
+2026-10-19 14:28:02	INFO	OpenGL version: 4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+2026-10-19 14:28:02	INFO	OpenGL renderer: virgl (LLVMPIPE (LLVM 21.1.8, 256 bits))
+2026-10-19 14:28:02	INFO	OpenGL vendor: Mesa
+2026-10-19 14:28:02	INFO	Checking available OpenGL extensions...
+2026-10-19 14:28:02	INFO	 ARB_texture_non_power_of_two: ok
+2026-10-19 14:28:02	INFO	Loading system config file /opt/darkos-es/home/.emulationstation/es_systems.cfg...
+2026-10-19 14:28:03	DEBUG	SystemView::getViewElements()
+2026-10-19 14:28:03	INFO	SDL AUDIO Initialized
+2026-10-19 14:28:19	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=1
+2026-10-19 14:28:19	DEBUG	UIModeController::logInput( Keyboard ):Key Return, isMappedTo= a, , value=0
+2026-10-19 14:28:45	DEBUG	UIModeController::logInput( Keyboard ):Key Down, isMappedTo= down, , value=1
+2026-10-19 14:28:45	DEBUG	UIModeController::logInput( Keyboard ):Key Down, isMappedTo= down, , value=0
+2026-10-19 14:29:56	DEBUG	fireEvent: quit  
+2026-10-19 14:29:57	INFO	EmulationStation cleanly shutting down.

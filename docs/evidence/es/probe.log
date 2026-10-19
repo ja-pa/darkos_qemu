@@ -1,0 +1,2 @@
+SDL backend=KMSDRM GL vendor=Mesa renderer=virgl (LLVMPIPE (LLVM 21.1.8, 256 bits)) version=4.3 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+frames=9569 elapsed_ms=30001

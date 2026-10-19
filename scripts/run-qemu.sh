@@ -35,6 +35,7 @@ if [[ $mode == serial ]]; then
   cmd+=(-display none)
 else
   qemu-system-aarch64 -device help | grep -q 'virtio-gpu-gl-pci' || fail 'QEMU lacks virtio-gpu-gl-pci'
-  cmd+=(-device virtio-gpu-gl-pci,hostmem=512M -display gtk,gl=on)
+  cmd+=(-device virtio-gpu-gl-pci,hostmem=512M -display gtk,gl=on
+    -device qemu-xhci,id=usb -device usb-kbd,bus=usb.0)
 fi
 if $dry_run; then printf '%q ' "${cmd[@]}"; printf '\n'; else exec "${cmd[@]}"; fi

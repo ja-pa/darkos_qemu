@@ -1,0 +1,18 @@
+[ 1214.948901] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 1215.013623] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[ 1215.171025] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[ 1215.236330] systemd-shutdown[1]: Unmounting file systems.
+[ 1215.273179] (sd-remount)[6648]: Remounting '/' read-only with options 'compress=zstd:3,space_cache=v2,subvolid=5,subvol=/'.
+[ 1215.325730] systemd-shutdown[1]: All filesystems unmounted.
+[ 1215.326051] systemd-shutdown[1]: Deactivating swaps.
+[ 1215.327041] systemd-shutdown[1]: All swaps deactivated.
+[ 1215.328009] systemd-shutdown[1]: Detaching loop devices.
+[ 1215.386277] systemd-shutdown[1]: All loop devices detached.
+[ 1215.386634] systemd-shutdown[1]: Stopping MD devices.
+[ 1215.390071] systemd-shutdown[1]: All MD devices stopped.
+[ 1215.390375] systemd-shutdown[1]: Detaching DM devices.
+[ 1215.394248] systemd-shutdown[1]: All DM devices detached.
+[ 1215.394541] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[ 1215.398289] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 1215.405558] systemd-shutdown[1]: Powering off.
+[ 1215.413771] reboot: Power down

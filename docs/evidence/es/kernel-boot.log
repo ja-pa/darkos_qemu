@@ -1,0 +1,411 @@
+Oct 19 14:13:46 rg353m kernel: Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Oct 19 14:13:46 rg353m kernel: Linux version 5.10.226-darkos-qemu (japa1@paja-lo) (aarch64-linux-gnu-gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #1 SMP PREEMPT Mon Oct 19 18:14:31 CEST 2026
+Oct 19 14:13:46 rg353m kernel: random: crng init done
+Oct 19 14:13:46 rg353m kernel: Machine model: linux,dummy-virt
+Oct 19 14:13:46 rg353m kernel: efi: UEFI not found.
+Oct 19 14:13:46 rg353m kernel: NUMA: No NUMA configuration found
+Oct 19 14:13:46 rg353m kernel: NUMA: Faking a node at [mem 0x0000000040000000-0x000000007fffffff]
+Oct 19 14:13:46 rg353m kernel: NUMA: NODE_DATA [mem 0x7fdf6a80-0x7fdf8fff]
+Oct 19 14:13:46 rg353m kernel: Zone ranges:
+Oct 19 14:13:46 rg353m kernel:   DMA      [mem 0x0000000040000000-0x000000007fffffff]
+Oct 19 14:13:46 rg353m kernel:   DMA32    empty
+Oct 19 14:13:46 rg353m kernel:   Normal   empty
+Oct 19 14:13:46 rg353m kernel: Movable zone start for each node
+Oct 19 14:13:46 rg353m kernel: Early memory node ranges
+Oct 19 14:13:46 rg353m kernel:   node   0: [mem 0x0000000040000000-0x000000007fffffff]
+Oct 19 14:13:46 rg353m kernel: Initmem setup node 0 [mem 0x0000000040000000-0x000000007fffffff]
+Oct 19 14:13:46 rg353m kernel: On node 0 totalpages: 262144
+Oct 19 14:13:46 rg353m kernel:   DMA zone: 4096 pages used for memmap
+Oct 19 14:13:46 rg353m kernel:   DMA zone: 0 pages reserved
+Oct 19 14:13:46 rg353m kernel:   DMA zone: 262144 pages, LIFO batch:63
+Oct 19 14:13:46 rg353m kernel: cma: Reserved 32 MiB at 0x000000007cc00000
+Oct 19 14:13:46 rg353m kernel: psci: probing for conduit method from DT.
+Oct 19 14:13:46 rg353m kernel: psci: PSCIv1.1 detected in firmware.
+Oct 19 14:13:46 rg353m kernel: psci: Using standard PSCI v0.2 function IDs
+Oct 19 14:13:46 rg353m kernel: psci: Trusted OS migration not required
+Oct 19 14:13:46 rg353m kernel: psci: SMC Calling Convention v1.0
+Oct 19 14:13:46 rg353m kernel: percpu: Embedded 23 pages/cpu s57112 r8192 d28904 u94208
+Oct 19 14:13:46 rg353m kernel: pcpu-alloc: s57112 r8192 d28904 u94208 alloc=23*4096
+Oct 19 14:13:46 rg353m kernel: pcpu-alloc: [0] 0 
+Oct 19 14:13:46 rg353m kernel: Detected VIPT I-cache on CPU0
+Oct 19 14:13:46 rg353m kernel: CPU features: detected: ARM erratum 845719
+Oct 19 14:13:46 rg353m kernel: CPU features: kernel page table isolation forced ON by KASLR
+Oct 19 14:13:46 rg353m kernel: CPU features: detected: Kernel page table isolation (KPTI)
+Oct 19 14:13:46 rg353m kernel: Built 1 zonelists, mobility grouping on.  Total pages: 258048
+Oct 19 14:13:46 rg353m kernel: Policy zone: DMA
+Oct 19 14:13:46 rg353m kernel: Kernel command line: console=ttyAMA0,115200 root=PARTUUID=a4b2b6f5-84cc-4a7d-9864-3a05d70567ba rootfstype=btrfs rw rootwait
+Oct 19 14:13:46 rg353m kernel: Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 19 14:13:46 rg353m kernel: Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Oct 19 14:13:46 rg353m kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Oct 19 14:13:46 rg353m kernel: Memory: 962816K/1048576K available (15936K kernel code, 2494K rwdata, 7676K rodata, 4992K init, 550K bss, 52992K reserved, 32768K cma-reserved)
+Oct 19 14:13:46 rg353m kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Oct 19 14:13:47 rg353m kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 19 14:13:47 rg353m kernel: rcu:         RCU event tracing is enabled.
+Oct 19 14:13:47 rg353m kernel: rcu:         RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+Oct 19 14:13:47 rg353m kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 19 14:13:47 rg353m kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Oct 19 14:13:47 rg353m kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+Oct 19 14:13:47 rg353m kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Oct 19 14:13:47 rg353m kernel: GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+Oct 19 14:13:47 rg353m kernel: arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+Oct 19 14:13:47 rg353m kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+Oct 19 14:13:47 rg353m kernel: sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+Oct 19 14:13:47 rg353m kernel: Console: colour dummy device 80x25
+Oct 19 14:13:47 rg353m kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+Oct 19 14:13:47 rg353m kernel: pid_max: default: 32768 minimum: 301
+Oct 19 14:13:47 rg353m kernel: LSM: Security Framework initializing
+Oct 19 14:13:47 rg353m kernel: Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: /cpus/cpu-map: empty cluster
+Oct 19 14:13:47 rg353m kernel: rcu: Hierarchical SRCU implementation.
+Oct 19 14:13:47 rg353m kernel: EFI services will not be available.
+Oct 19 14:13:47 rg353m kernel: smp: Bringing up secondary CPUs ...
+Oct 19 14:13:47 rg353m kernel: smp: Brought up 1 node, 1 CPU
+Oct 19 14:13:47 rg353m kernel: SMP: Total of 1 processors activated.
+Oct 19 14:13:47 rg353m kernel: CPU features: detected: 32-bit EL0 Support
+Oct 19 14:13:47 rg353m kernel: CPU features: detected: CRC32 instructions
+Oct 19 14:13:47 rg353m kernel: CPU features: detected: 32-bit EL1 Support
+Oct 19 14:13:47 rg353m kernel: CPU: All CPU(s) started at EL1
+Oct 19 14:13:47 rg353m kernel: alternatives: patching kernel code
+Oct 19 14:13:47 rg353m kernel: devtmpfs: initialized
+Oct 19 14:13:47 rg353m kernel: KASLR enabled
+Oct 19 14:13:47 rg353m kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct 19 14:13:47 rg353m kernel: futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: pinctrl core: initialized pinctrl subsystem
+Oct 19 14:13:47 rg353m kernel: DMI not present or invalid.
+Oct 19 14:13:47 rg353m kernel: NET: Registered protocol family 16
+Oct 19 14:13:47 rg353m kernel: DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+Oct 19 14:13:47 rg353m kernel: DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 19 14:13:47 rg353m kernel: audit: initializing netlink subsys (disabled)
+Oct 19 14:13:47 rg353m kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 19 14:13:47 rg353m kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 19 14:13:47 rg353m kernel: audit: type=2000 audit(0.100:1): state=initialized audit_enabled=0 res=1
+Oct 19 14:13:47 rg353m kernel: cpuidle: using governor menu
+Oct 19 14:13:47 rg353m kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Oct 19 14:13:47 rg353m kernel: ASID allocator initialised with 32768 entries
+Oct 19 14:13:47 rg353m kernel: Serial: AMBA PL011 UART driver
+Oct 19 14:13:47 rg353m kernel: 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+Oct 19 14:13:47 rg353m kernel: printk: console [ttyAMA0] enabled
+Oct 19 14:13:47 rg353m kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 19 14:13:47 rg353m kernel: HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+Oct 19 14:13:47 rg353m kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 19 14:13:47 rg353m kernel: HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+Oct 19 14:13:47 rg353m kernel: raid6: neonx8   gen()  5028 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx8   xor()  2015 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx4   gen()  4359 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx4   xor()  1824 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx2   gen()  2765 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx2   xor()  1163 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx1   gen()  1531 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: neonx1   xor()   951 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x8  gen()  2412 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x8  xor()  1673 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x4  gen()  3074 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x4  xor()  1267 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x2  gen()  2790 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x2  xor()  1691 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x1  gen()  2156 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: int64x1  xor()  1266 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: using algorithm neonx8 gen() 5028 MB/s
+Oct 19 14:13:47 rg353m kernel: raid6: .... xor() 2015 MB/s, rmw enabled
+Oct 19 14:13:47 rg353m kernel: raid6: using neon recovery algorithm
+Oct 19 14:13:47 rg353m kernel: ACPI: Interpreter disabled.
+Oct 19 14:13:47 rg353m kernel: iommu: Default domain type: Translated 
+Oct 19 14:13:47 rg353m kernel: vgaarb: loaded
+Oct 19 14:13:47 rg353m kernel: SCSI subsystem initialized
+Oct 19 14:13:47 rg353m kernel: libata version 3.00 loaded.
+Oct 19 14:13:47 rg353m kernel: usbcore: registered new interface driver usbfs
+Oct 19 14:13:47 rg353m kernel: usbcore: registered new interface driver hub
+Oct 19 14:13:47 rg353m kernel: usbcore: registered new device driver usb
+Oct 19 14:13:47 rg353m kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 19 14:13:47 rg353m kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 19 14:13:47 rg353m kernel: PTP clock support registered
+Oct 19 14:13:47 rg353m kernel: EDAC MC: Ver: 3.0.0
+Oct 19 14:13:47 rg353m kernel: FPGA manager framework
+Oct 19 14:13:47 rg353m kernel: Advanced Linux Sound Architecture Driver Initialized.
+Oct 19 14:13:47 rg353m kernel: clocksource: Switched to clocksource arch_sys_counter
+Oct 19 14:13:47 rg353m kernel: VFS: Disk quotas dquot_6.6.0
+Oct 19 14:13:47 rg353m kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 19 14:13:47 rg353m kernel: pnp: PnP ACPI: disabled
+Oct 19 14:13:47 rg353m kernel: NET: Registered protocol family 2
+Oct 19 14:13:47 rg353m kernel: IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Oct 19 14:13:47 rg353m kernel: UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+Oct 19 14:13:47 rg353m kernel: NET: Registered protocol family 1
+Oct 19 14:13:47 rg353m kernel: RPC: Registered named UNIX socket transport module.
+Oct 19 14:13:47 rg353m kernel: RPC: Registered udp transport module.
+Oct 19 14:13:47 rg353m kernel: RPC: Registered tcp transport module.
+Oct 19 14:13:47 rg353m kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Oct 19 14:13:47 rg353m kernel: PCI: CLS 0 bytes, default 64
+Oct 19 14:13:47 rg353m kernel: hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+Oct 19 14:13:47 rg353m kernel: kvm [1]: HYP mode not available
+Oct 19 14:13:47 rg353m kernel: Initialise system trusted keyrings
+Oct 19 14:13:47 rg353m kernel: workingset: timestamp_bits=42 max_order=18 bucket_order=0
+Oct 19 14:13:47 rg353m kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 19 14:13:47 rg353m kernel: NFS: Registering the id_resolver key type
+Oct 19 14:13:47 rg353m kernel: Key type id_resolver registered
+Oct 19 14:13:47 rg353m kernel: Key type id_legacy registered
+Oct 19 14:13:47 rg353m kernel: nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Oct 19 14:13:47 rg353m kernel: nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Oct 19 14:13:47 rg353m kernel: 9p: Installing v9fs 9p2000 file system support
+Oct 19 14:13:47 rg353m kernel: xor: measuring software checksum speed
+Oct 19 14:13:47 rg353m kernel:    8regs           :  2587 MB/sec
+Oct 19 14:13:47 rg353m kernel:    32regs          :  6387 MB/sec
+Oct 19 14:13:47 rg353m kernel:    arm64_neon      :  3950 MB/sec
+Oct 19 14:13:47 rg353m kernel: xor: using function: 32regs (6387 MB/sec)
+Oct 19 14:13:47 rg353m kernel: Key type asymmetric registered
+Oct 19 14:13:47 rg353m kernel: Asymmetric key parser 'x509' registered
+Oct 19 14:13:47 rg353m kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+Oct 19 14:13:47 rg353m kernel: io scheduler mq-deadline registered
+Oct 19 14:13:47 rg353m kernel: io scheduler kyber registered
+Oct 19 14:13:47 rg353m kernel: pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+Oct 19 14:13:47 rg353m kernel: pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+Oct 19 14:13:47 rg353m kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct 19 14:13:47 rg353m kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+Oct 19 14:13:47 rg353m kernel: pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+Oct 19 14:13:47 rg353m kernel: pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:01.0: [1af4:1001] type 00 class 0x010000
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:01.0: reg 0x10: [io  0x0000-0x007f]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:01.0: reg 0x14: [mem 0x00000000-0x00000fff]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:02.0: [1af4:1000] type 00 class 0x020000
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:02.0: reg 0x10: [io  0x0000-0x001f]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:02.0: reg 0x14: [mem 0x00000000-0x00000fff]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:02.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:02.0: reg 0x30: [mem 0x00000000-0x0007ffff pref]
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:03.0: [1af4:1050] type 00 class 0x038000
+Oct 19 14:13:47 rg353m kernel: pci 0000:00:03.0: reg 0x14: [mem 0x00000000-0x00000fff]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:03.0: reg 0x18: [mem 0x00000000-0x00003fff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:03.0: reg 0x20: [mem 0x00000000-0x1fffffff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:04.0: [1b36:000d] type 00 class 0x0c0330
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:04.0: reg 0x10: [mem 0x00000000-0x00003fff 64bit]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:04.0: enabling Extended Tags
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:03.0: BAR 4: assigned [mem 0x8000000000-0x801fffffff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:02.0: BAR 6: assigned [mem 0x10000000-0x1007ffff pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:01.0: BAR 4: assigned [mem 0x8020000000-0x8020003fff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:02.0: BAR 4: assigned [mem 0x8020004000-0x8020007fff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:03.0: BAR 2: assigned [mem 0x8020008000-0x802000bfff 64bit pref]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:04.0: BAR 0: assigned [mem 0x802000c000-0x802000ffff 64bit]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:01.0: BAR 1: assigned [mem 0x10080000-0x10080fff]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:02.0: BAR 1: assigned [mem 0x10081000-0x10081fff]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:03.0: BAR 1: assigned [mem 0x10082000-0x10082fff]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x107f]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:02.0: BAR 0: assigned [io  0x1080-0x109f]
+Oct 19 14:13:48 rg353m kernel: pci 0000:00:04.0: enabling device (0000 -> 0002)
+Oct 19 14:13:48 rg353m kernel: EINJ: ACPI disabled.
+Oct 19 14:13:48 rg353m kernel: virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+Oct 19 14:13:48 rg353m kernel: virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+Oct 19 14:13:48 rg353m kernel: virtio-pci 0000:00:03.0: enabling device (0000 -> 0002)
+Oct 19 14:13:48 rg353m kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Oct 19 14:13:48 rg353m kernel: SuperH (H)SCI(F) driver initialized
+Oct 19 14:13:48 rg353m kernel: msm_serial: driver initialized
+Oct 19 14:13:48 rg353m kernel: [drm] pci: virtio-gpu-pci detected at 0000:00:03.0
+Oct 19 14:13:48 rg353m kernel: [drm] features: +virgl +edid
+Oct 19 14:13:48 rg353m kernel: [drm] number of scanouts: 1
+Oct 19 14:13:48 rg353m kernel: [drm] number of cap sets: 2
+Oct 19 14:13:48 rg353m kernel: [drm] cap set 0: id 1, max-version 1, max-size 308
+Oct 19 14:13:48 rg353m kernel: [drm] cap set 1: id 2, max-version 2, max-size 1408
+Oct 19 14:13:48 rg353m kernel: [drm] Initialized virtio_gpu 0.1.0 0 for virtio2 on minor 0
+Oct 19 14:13:48 rg353m kernel: Console: switching to colour frame buffer device 80x30
+Oct 19 14:13:48 rg353m kernel: virtio_gpu virtio2: [drm] fb0: virtio_gpudrmfb frame buffer device
+Oct 19 14:13:48 rg353m kernel: cacheinfo: Unable to detect cache hierarchy for CPU 0
+Oct 19 14:13:48 rg353m kernel: loop: module loaded
+Oct 19 14:13:48 rg353m kernel: virtio_blk virtio0: [vda] 15728640 512-byte logical blocks (8.05 GB/7.50 GiB)
+Oct 19 14:13:48 rg353m kernel: vda: detected capacity change from 0 to 8053063680
+Oct 19 14:13:48 rg353m kernel:  vda: vda1 vda2 vda3 vda4 vda5
+Oct 19 14:13:48 rg353m kernel: megasas: 07.714.04.00-rc1
+Oct 19 14:13:48 rg353m kernel: physmap-flash 0.flash: physmap platform flash device: [mem 0x00000000-0x03ffffff]
+Oct 19 14:13:48 rg353m kernel: 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Oct 19 14:13:48 rg353m kernel: Intel/Sharp Extended Query Table at 0x0031
+Oct 19 14:13:48 rg353m kernel: Using buffer write method
+Oct 19 14:13:48 rg353m kernel: erase region 0: offset=0x0,size=0x40000,blocks=256
+Oct 19 14:13:48 rg353m kernel: physmap-flash 0.flash: physmap platform flash device: [mem 0x04000000-0x07ffffff]
+Oct 19 14:13:48 rg353m kernel: 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Oct 19 14:13:48 rg353m kernel: Intel/Sharp Extended Query Table at 0x0031
+Oct 19 14:13:48 rg353m kernel: Using buffer write method
+Oct 19 14:13:48 rg353m kernel: erase region 0: offset=0x0,size=0x40000,blocks=256
+Oct 19 14:13:48 rg353m kernel: Concatenating MTD devices:
+Oct 19 14:13:48 rg353m kernel: (0): "0.flash"
+Oct 19 14:13:48 rg353m kernel: (1): "0.flash"
+Oct 19 14:13:48 rg353m kernel: into device "0.flash"
+Oct 19 14:13:48 rg353m kernel: tun: Universal TUN/TAP device driver, 1.6
+Oct 19 14:13:48 rg353m kernel: thunder_xcv, ver 1.0
+Oct 19 14:13:48 rg353m kernel: thunder_bgx, ver 1.0
+Oct 19 14:13:48 rg353m kernel: nicpf, ver 1.0
+Oct 19 14:13:48 rg353m kernel: hclge is initializing
+Oct 19 14:13:48 rg353m kernel: hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+Oct 19 14:13:48 rg353m kernel: hns3: Copyright (c) 2017 Huawei Corporation.
+Oct 19 14:13:48 rg353m kernel: e1000: Intel(R) PRO/1000 Network Driver
+Oct 19 14:13:48 rg353m kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+Oct 19 14:13:48 rg353m kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Oct 19 14:13:48 rg353m kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Oct 19 14:13:48 rg353m kernel: igb: Intel(R) Gigabit Ethernet Network Driver
+Oct 19 14:13:48 rg353m kernel: igb: Copyright (c) 2007-2014 Intel Corporation.
+Oct 19 14:13:48 rg353m kernel: igbvf: Intel(R) Gigabit Virtual Function Network Driver
+Oct 19 14:13:48 rg353m kernel: igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+Oct 19 14:13:48 rg353m kernel: sky2: driver version 1.30
+Oct 19 14:13:48 rg353m kernel: VFIO - User Level meta-driver version: 0.3
+Oct 19 14:13:48 rg353m kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct 19 14:13:48 rg353m kernel: ehci-pci: EHCI PCI platform driver
+Oct 19 14:13:48 rg353m kernel: ehci-platform: EHCI generic platform driver
+Oct 19 14:13:48 rg353m kernel: ehci-orion: EHCI orion driver
+Oct 19 14:13:48 rg353m kernel: ehci-exynos: EHCI Exynos driver
+Oct 19 14:13:48 rg353m kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Oct 19 14:13:48 rg353m kernel: ohci-pci: OHCI PCI platform driver
+Oct 19 14:13:48 rg353m kernel: ohci-platform: OHCI generic platform driver
+Oct 19 14:13:48 rg353m kernel: ohci-exynos: OHCI Exynos driver
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: xHCI Host Controller
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 1
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: xHCI Host Controller
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 2
+Oct 19 14:13:48 rg353m kernel: xhci_hcd 0000:00:04.0: Host supports USB 3.0 SuperSpeed
+Oct 19 14:13:48 rg353m kernel: hub 1-0:1.0: USB hub found
+Oct 19 14:13:49 rg353m kernel: hub 1-0:1.0: 4 ports detected
+Oct 19 14:13:49 rg353m kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+Oct 19 14:13:49 rg353m kernel: hub 2-0:1.0: USB hub found
+Oct 19 14:13:49 rg353m kernel: hub 2-0:1.0: 4 ports detected
+Oct 19 14:13:49 rg353m kernel: usbcore: registered new interface driver usb-storage
+Oct 19 14:13:49 rg353m kernel: rtc-pl031 9010000.pl031: registered as rtc0
+Oct 19 14:13:49 rg353m kernel: rtc-pl031 9010000.pl031: setting system clock to 2026-10-19T18:13:39 UTC (1792433619)
+Oct 19 14:13:49 rg353m kernel: i2c /dev entries driver
+Oct 19 14:13:49 rg353m kernel: sdhci: Secure Digital Host Controller Interface driver
+Oct 19 14:13:49 rg353m kernel: sdhci: Copyright(c) Pierre Ossman
+Oct 19 14:13:49 rg353m kernel: Synopsys Designware Multimedia Card Interface Driver
+Oct 19 14:13:49 rg353m kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Oct 19 14:13:49 rg353m kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 19 14:13:49 rg353m kernel: usbcore: registered new interface driver usbhid
+Oct 19 14:13:49 rg353m kernel: usbhid: USB HID core driver
+Oct 19 14:13:49 rg353m kernel: NET: Registered protocol family 17
+Oct 19 14:13:49 rg353m kernel: 9pnet: Installing 9P2000 support
+Oct 19 14:13:49 rg353m kernel: Key type dns_resolver registered
+Oct 19 14:13:49 rg353m kernel: registered taskstats version 1
+Oct 19 14:13:49 rg353m kernel: Loading compiled-in X.509 certificates
+Oct 19 14:13:49 rg353m kernel: Btrfs loaded, crc32c=crc32c-generic
+Oct 19 14:13:49 rg353m kernel: input: gpio-keys as /devices/platform/gpio-keys/input/input0
+Oct 19 14:13:49 rg353m kernel: clk: Disabling unused clocks
+Oct 19 14:13:49 rg353m kernel: ALSA device list:
+Oct 19 14:13:49 rg353m kernel:   No soundcards found.
+Oct 19 14:13:49 rg353m kernel: uart-pl011 9000000.pl011: no DMA platform data
+Oct 19 14:13:49 rg353m kernel: BTRFS: device label ROOTFS devid 1 transid 560 /dev/root scanned by swapper/0 (1)
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): using crc32c (crc32c-generic) checksum algorithm
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): flagging fs with big metadata feature
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): using free space tree
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): has skinny extents
+Oct 19 14:13:49 rg353m kernel: VFS: Mounted root (btrfs filesystem) on device 0:21.
+Oct 19 14:13:49 rg353m kernel: devtmpfs: mounted
+Oct 19 14:13:49 rg353m kernel: Freeing unused kernel memory: 4992K
+Oct 19 14:13:49 rg353m kernel: Run /sbin/init as init process
+Oct 19 14:13:49 rg353m kernel:   with arguments:
+Oct 19 14:13:49 rg353m kernel:     /sbin/init
+Oct 19 14:13:49 rg353m kernel:   with environment:
+Oct 19 14:13:49 rg353m kernel:     HOME=/
+Oct 19 14:13:49 rg353m kernel:     TERM=linux
+Oct 19 14:13:49 rg353m kernel: usb 1-1: new high-speed USB device number 2 using xhci_hcd
+Oct 19 14:13:49 rg353m kernel: input: QEMU QEMU USB Keyboard as /devices/platform/4010000000.pcie/pci0000:00/0000:00:04.0/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input1
+Oct 19 14:13:49 rg353m kernel: hid-generic 0003:0627:0001.0001: input: USB HID v1.11 Keyboard [QEMU QEMU USB Keyboard] on usb-0000:00:04.0-1/input0
+Oct 19 14:13:49 rg353m systemd[1]: systemd 257.9-1~deb13u1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+Oct 19 14:13:49 rg353m systemd[1]: Detected virtualization qemu.
+Oct 19 14:13:49 rg353m systemd[1]: Detected architecture arm64.
+Oct 19 14:13:49 rg353m systemd[1]: Hostname set to <rg353m>.
+Oct 19 14:13:49 rg353m systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+Oct 19 14:13:49 rg353m systemd-gpt-auto-generator[116]: File system behind root file system is reported by btrfs to be backed by pseudo-device /dev/root, which is not a valid userspace accessible device node. Cannot determine correct backing block device.
+Oct 19 14:13:49 rg353m (sd-exec-[112]: /usr/lib/systemd/system-generators/systemd-gpt-auto-generator failed with exit status 1.
+Oct 19 14:13:49 rg353m systemd[1]: Queued start job for default target multi-user.target.
+Oct 19 14:13:49 rg353m systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Oct 19 14:13:49 rg353m systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Oct 19 14:13:49 rg353m systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Oct 19 14:13:49 rg353m systemd[1]: Created slice system-xfs_scrub.slice - xfs_scrub background service slice.
+Oct 19 14:13:49 rg353m systemd[1]: Created slice user.slice - User and Session Slice.
+Oct 19 14:13:49 rg353m systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Oct 19 14:13:49 rg353m systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Oct 19 14:13:49 rg353m systemd[1]: proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/binfmt_misc).
+Oct 19 14:13:49 rg353m systemd[1]: Expecting device dev-disk-by\x2dpartuuid-670cf923\x2dabc6\x2d4cfb\x2dad8c\x2d0302d886d82a.device - /dev/disk/by-partuuid/670cf923-abc6-4cfb-ad8c-0302d886d82a...
+Oct 19 14:13:49 rg353m systemd[1]: Expecting device dev-ttyAMA0.device - /dev/ttyAMA0...
+Oct 19 14:13:49 rg353m systemd[1]: Reached target paths.target - Path Units.
+Oct 19 14:13:49 rg353m systemd[1]: Reached target remote-fs.target - Remote File Systems.
+Oct 19 14:13:49 rg353m systemd[1]: Reached target slices.target - Slice Units.
+Oct 19 14:13:49 rg353m systemd[1]: Reached target swap.target - Swaps.
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+Oct 19 14:13:49 rg353m systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 19 14:13:49 rg353m systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Oct 19 14:13:49 rg353m systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Oct 19 14:13:49 rg353m systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Oct 19 14:13:49 rg353m systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Oct 19 14:13:49 rg353m systemd[1]: Mounting run-lock.mount - Legacy Locks Directory /run/lock...
+Oct 19 14:13:49 rg353m systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Oct 19 14:13:49 rg353m systemd[1]: sys-kernel-tracing.mount - Kernel Trace File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/tracing).
+Oct 19 14:13:49 rg353m systemd[1]: tmp.mount: Directory /tmp to mount over is not empty, mounting anyway.
+Oct 19 14:13:49 rg353m systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+Oct 19 14:13:49 rg353m systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Oct 19 14:13:49 rg353m systemd[1]: kmod-static-nodes.service - Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/5.10.226-darkos-qemu/modules.devname).
+Oct 19 14:13:49 rg353m systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Oct 19 14:13:49 rg353m systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Oct 19 14:13:49 rg353m systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Oct 19 14:13:49 rg353m systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Oct 19 14:13:49 rg353m systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+Oct 19 14:13:49 rg353m systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+Oct 19 14:13:49 rg353m systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-journald.service - Journal Service...
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Oct 19 14:13:49 rg353m systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Oct 19 14:13:49 rg353m systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Oct 19 14:13:49 rg353m systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Oct 19 14:13:49 rg353m systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Oct 19 14:13:49 rg353m systemd[1]: Mounted run-lock.mount - Legacy Locks Directory /run/lock.
+Oct 19 14:13:49 rg353m systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Oct 19 14:13:49 rg353m systemd[1]: Mounted tmp.mount - Temporary Directory /tmp.
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): use zstd compression, level 3
+Oct 19 14:13:49 rg353m kernel: BTRFS info (device vda4): using free space tree
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Oct 19 14:13:49 rg353m systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+Oct 19 14:13:49 rg353m systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Oct 19 14:13:49 rg353m systemd[1]: systemd-sysusers.service - Create System Users was skipped because no trigger condition checks were met.
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+Oct 19 14:13:49 rg353m systemd-journald[137]: Collecting audit messages is disabled.
+Oct 19 14:13:49 rg353m systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Oct 19 14:13:49 rg353m systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Oct 19 14:13:49 rg353m systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+Oct 19 14:13:49 rg353m systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.
+Oct 19 14:13:49 rg353m systemd[1]: modprobe@drm.service: Deactivated successfully.
+Oct 19 14:13:49 rg353m systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Oct 19 14:13:49 rg353m systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 19 14:13:49 rg353m systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Oct 19 14:13:49 rg353m systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Oct 19 14:13:49 rg353m systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Oct 19 14:13:49 rg353m systemd[1]: sys-fs-fuse-connections.mount - FUSE Control File System was skipped because of an unmet condition check (ConditionPathExists=/sys/fs/fuse/connections).
+Oct 19 14:13:49 rg353m systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+Oct 19 14:13:49 rg353m systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Oct 19 14:13:49 rg353m systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+Oct 19 14:13:49 rg353m systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.
+Oct 19 14:13:49 rg353m systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+Oct 19 14:13:49 rg353m systemd[1]: Started systemd-journald.service - Journal Service.
+Oct 19 14:13:50 rg353m systemd-journald[137]: Received client request to flush runtime journal.
+Oct 19 14:13:57 rg353m kernel: virtio_net virtio1 enp0s2: renamed from eth0
+Oct 19 14:13:57 rg353m kernel: BTRFS info (device vda4): devid 1 device path /dev/root changed to /dev/vda4 scanned by (udev-worker) (195)

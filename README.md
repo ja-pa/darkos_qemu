@@ -187,6 +187,9 @@ BUILD_DIR="$WORK_DIR/build-repeat" DISK_IMAGE="$WORK_DIR/images/fresh.qcow2" \
 sha256sum -c "$WORK_DIR/logs/base-image.sha256"
 ```
 
+For the cross-compiled EmulationStation frontend using SDL2 KMSDRM and Mesa,
+see [the EmulationStation workflow](docs/emulationstation.md).
+
 The integration validator starts QEMU, waits for SSH, checks normal systemd
 multi-user startup, root and boot mounts, VirtIO disk, DHCP/default route, gateway
 connectivity and DNS, then requests clean poweroff. It records serial and guest
