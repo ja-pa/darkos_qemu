@@ -1,5 +1,7 @@
 # dArkOS on ARM64 QEMU
 
+For a condensed command reference in Czech, see [howto.md](howto.md).
+
 ## Quick start: prepared environment
 
 Run the four entry points **inside Ubuntu 26.04 on WSL2 with WSLg**. Large images,
@@ -17,6 +19,13 @@ bash vm.sh stop
 Import verifies checksums, creates a separate working disk and installs your own
 SSH identity. The graphical QEMU window opens automatically; SSH remains local
 to `127.0.0.1:2222`. The bundle's original disk is preserved.
+
+Graphical launches also open a small host-side keyboard legend. Select its
+EmulationStation or Game Boy profile manually. Use `bash vm.sh es --no-controls`
+or `bash vm.sh start gtk-gl --no-controls` to skip it, or `bash vm.sh controls`
+to reopen it. Closing the legend leaves QEMU running; `bash vm.sh stop` closes
+both. Existing host installations need `sudo apt-get install python3-tk`.
+The mappings live in [config/controls.json](config/controls.json).
 
 ## Quick start: prepare and develop
 

@@ -13,7 +13,7 @@ Debian ARM64 headers/runtime from the guest, and the private SDL2/Mesa prefix.
 | `setup.sh` | `source`, `import <runtime-directory>` |
 | `sdk.sh` | `prepare [--refresh]`, `check`, `export <new-directory>`, `import <sdk-directory>` |
 | `build.sh` | `build\|deploy es\|peanut-gb\|sdl-demo\|all`, `app <CMake-source>`, `deploy-app <ARM64-binary>` |
-| `vm.sh` | `start [gtk-gl\|serial]`, `es`, `stop`, `status`, `ssh [command]`, `logs`, `check`, `export <new-directory>` |
+| `vm.sh` | `start [gtk-gl\|serial] [--no-controls]`, `es [--no-controls]`, `controls`, `stop`, `status`, `ssh [command]`, `logs`, `check`, `export <new-directory>` |
 
 Defaults: `WORK_DIR=$HOME/darkos-qemu-work`, `DISK_IMAGE=$WORK_DIR/images/work.qcow2`,
 `SSH_PORT=2222`, `SSH_KEY=$WORK_DIR/ssh/id_ed25519`, `JOBS=4`. Export WORK_DIR once
@@ -76,6 +76,48 @@ background with output in that log; use `vm.sh ssh` for commands.
 `vm.sh es` opens the GUI and runs ES in the foreground; quitting ES leaves QEMU
 running. `stop` requests systemd poweroff, waits up to 120 seconds, and never
 silently kills the process. `check` requires an offline disk.
+
+### Host keyboard legend
+
+`vm.sh es` and `vm.sh start gtk-gl` open a resizable Tkinter help window by
+default. It runs on the WSL host and never sends input to the guest. Choose the
+EmulationStation or Game Boy / Peanut-GB profile from its dropdown. Click QEMU
+to play; the helper does not periodically raise itself or request keyboard focus.
+Its initial position is a window-manager hint; WSLg may place it elsewhere.
+
+```bash
+bash vm.sh es --no-controls             # suppress automatic opening
+bash vm.sh start gtk-gl --no-controls
+bash vm.sh controls                     # open/reopen independently
+```
+
+Closing the legend leaves the VM running. Repeating a graphical start reuses
+the existing legend for this WORK_DIR without raising it. `--no-controls` skips
+opening a window; it does not close one that is already open. Serial launches
+never open the legend. A successful `vm.sh stop` also closes it, including when
+the VM has already stopped. Closing QEMU directly can leave the legend open.
+
+Setup installs `python3-tk`. On an existing host, install it with
+`sudo apt-get install python3-tk`. Missing Tk or a display failure produces a
+warning and `WORK_DIR/logs/workflow/controls.log`; it never blocks QEMU startup.
+Window PID/state and a singleton lock live under `WORK_DIR/state/controls.*`.
+Process command line and start time are checked before stopping the helper.
+
+Edit [config/controls.json](../config/controls.json) to change the displayed
+profiles, then close/reopen the window. This changes the legend only, not input
+bindings. Defaults follow `fixtures/es/.emulationstation/es_input.cfg`, ES's F4
+quit action, and the pinned patched `examples/sdl2/peanut_sdl.c`. Custom guest
+bindings require a corresponding manual legend update. The helper does not
+automatically detect the active application.
+
+Validation on 20 October 2026: 25 host tests passed, including real Tk profile
+switching/resizing/cleanup, stale-PID rejection and missing-display recovery.
+The default legend was visually inspected under WSLg with Tk 8.6.
+Live tests against the prepared `darkos-qemu-m5` runtime confirmed that
+`--no-controls` and serial starts do not open the legend, repeated graphical
+starts retain the same helper PID, and closing/reopening it leaves ES running.
+QMP keyboard input still reached ES (including clean F4 exit). Managed stop
+closed both VM and helper; the subsequent `qemu-img check` reported no errors.
 
 ## Build another application
 

@@ -1,0 +1,28 @@
+{
+  "profiles": [
+    {
+      "name": "EmulationStation",
+      "note": "Default QEMU keyboard profile. Select the QEMU window before typing. Up/Down also switch systems in the original theme.",
+      "controls": [
+        ["D-pad / navigation", "↑ ↓ ← →"],
+        ["A / confirm / launch", "Enter"],
+        ["B / back", "Escape"],
+        ["Start / main menu", "Space"],
+        ["Select / options", "Tab"],
+        ["Quit EmulationStation", "F4"]
+      ]
+    },
+    {
+      "name": "Game Boy / Peanut-GB",
+      "note": "Console buttons and launcher actions are separate. Escape closes the emulator and returns to ES when launched from ES.",
+      "controls": [
+        ["Game Boy D-pad", "↑ ↓ ← →"],
+        ["Game Boy A", "Z"],
+        ["Game Boy B", "X"],
+        ["Game Boy Start", "Enter"],
+        ["Game Boy Select", "Backspace"],
+        ["Exit game / return to ES", "Escape"]
+      ]
+    }
+  ]
+}
