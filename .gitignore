@@ -1,0 +1,8 @@
+/images/
+/repos/
+/build/
+/logs/
+*.qcow2
+*.img
+*.img.7z.*
+__pycache__/

@@ -1,0 +1,44 @@
+Recorded: 2026-10-19T16:28:42Z
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+Linux paja-lo 6.18.33.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026 x86_64 GNU/Linux
+
+Kernel commit: bef65b1793524bc7bd27c4d70d0ce59cbebee032
+aarch64-linux-gnu-gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+gcc-12 (Ubuntu 12.5.0-9ubuntu1) 12.5.0
+GNU ld (GNU Binutils for Ubuntu) 2.46
+QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.2)
+7zip	26.00+dfsg-1
+bc	1.07.1-4build1
+binutils-aarch64-linux-gnu	2.46-3ubuntu2
+bison	2:3.8.2+dfsg-1ubuntu0.26.04.1
+btrfs-progs	6.17.1-1build1
+build-essential	12.12ubuntu2.26.04.2
+dosfstools	4.2-1.2build1
+fdisk	2.41.3-3ubuntu2.2
+flex	2.6.4-8.2build2
+gcc-12	12.5.0-9ubuntu1
+gcc-12-aarch64-linux-gnu	12.5.0-9ubuntu1cross1
+git	1:2.53.0-1ubuntu1
+kmod	34.2-2ubuntu2
+libelf-dev	0.194-4
+libssl-dev	3.5.5-1ubuntu3.7
+openssh-client	1:10.2p1-2ubuntu3.8
+python3	3.14.3-0ubuntu2
+qemu-system-arm	1:10.2.1+ds-1ubuntu3.2
+qemu-system-gui	1:10.2.1+ds-1ubuntu3.2
+qemu-utils	1:10.2.1+ds-1ubuntu3.2
+rsync	3.4.1+ds1-7ubuntu0.3
+udev	259.5-0ubuntu3.4
+util-linux	2.41.3-3ubuntu2.2

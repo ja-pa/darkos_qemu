@@ -1,0 +1,4 @@
+*.sh text eol=lf
+*.config text eol=lf
+*.fragment text eol=lf
+*.md text eol=lf
